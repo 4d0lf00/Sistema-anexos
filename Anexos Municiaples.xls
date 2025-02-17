@@ -1,0 +1,404 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><meta name=ProgId content=Excel.Sheet> <meta name=Generator content="Microsoft Excel 11"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>Worksheet</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>
+<thead>
+<tr>
+<th style="width:8%" ;="" bgcolor="#F8931E">ANEXO</th>
+<th style="width:18%" ;="" bgcolor="#F8931E">APELLIDO</th>
+<th style="width:18%" ;="" bgcolor="#F8931E">NOMBRE</th>
+<th style="width:26%" ;="" bgcolor="#F8931E">UBICACIÓN</th>
+<th style="width:18%" ;="" bgcolor="#F8931E">CORREO</th>
+</tr>
+</thead>
+<tbody>
+<tr><td align="CENTER">7081</td><td align="CENTER">ARAB</td><td align="CENTER">ANTONIETA</td><td align="CENTER">COMUNICACIONES</td><td align="CENTER">antonieta.arab@munimelipilla.cl </td></tr>
+<tr><td align="CENTER">7187</td><td align="CENTER">MUÑOZ</td><td align="CENTER">NICOLAS</td><td align="CENTER">ADMINISTRACIÓN</td><td align="CENTER">nicolas.munoz@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7037</td><td align="CENTER">GALAZ</td><td align="CENTER">JESSICA</td><td align="CENTER">ADQUISICIONES</td><td align="CENTER">jessica.galaz@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7050</td><td align="CENTER">MATTA</td><td align="CENTER">DAISY</td><td align="CENTER">ADQUISICIONES</td><td align="CENTER">daisy.matta@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7052</td><td align="CENTER">BARRA</td><td align="CENTER">JENIFFER</td><td align="CENTER">ADQUISICIONES</td><td align="CENTER">jeniffer.barra@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7151</td><td align="CENTER">GONZALEZ</td><td align="CENTER">MARIA</td><td align="CENTER">ADQUISICIONES</td><td align="CENTER">mariapaz.gonzalez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7155</td><td align="CENTER">ALVARADO</td><td align="CENTER">WALDO</td><td align="CENTER">ADQUISICIONES</td><td align="CENTER">vapsi.silva@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7141</td><td align="CENTER">CARRASCO</td><td align="CENTER">SABRINA</td><td align="CENTER">ADQUISICIONES</td><td align="CENTER">sabrina.carrasco@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7072</td><td align="CENTER">CABELLO</td><td align="CENTER">YANIRA</td><td align="CENTER">ADQUISICIONES</td><td align="CENTER">yanira.cabello@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7102</td><td align="CENTER">ADQUISICIONES</td><td align="CENTER"></td><td align="CENTER">ADQUISICIONES</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7004</td><td align="CENTER">VERA</td><td align="CENTER">ANA LUISA</td><td align="CENTER">ALCALDIA</td><td align="CENTER">alcaldia@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7004</td><td align="CENTER">GARATE</td><td align="CENTER">PAULA </td><td align="CENTER">ALCALDIA</td><td align="CENTER">alcaldia@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7331</td><td align="CENTER">GIROT</td><td align="CENTER">BRUNA</td><td align="CENTER">OF DE PROYECTOS DIDECO</td><td align="CENTER">girot.bruna@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7021</td><td align="CENTER">BIBLIOTECA</td><td align="CENTER">MUNICIPAL</td><td align="CENTER">BIBLIOTECA MUN.</td><td align="CENTER">biblioteca@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7337</td><td align="CENTER">BRIONES</td><td align="CENTER">MARIA</td><td align="CENTER">CASA DE PERSONAS MAYORES</td><td align="CENTER">maria.briones@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7322</td><td align="CENTER">SANTIS</td><td align="CENTER">IGNACIA</td><td align="CENTER">CASA DE PERSONAS MAYORES</td><td align="CENTER">mariaignacia.santis@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7005</td><td align="CENTER">RAMIREZ</td><td align="CENTER">AURORA</td><td align="CENTER">CDE</td><td align="CENTER">aurora.ramirez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7353</td><td align="CENTER">JIMENEZ</td><td align="CENTER">ALEJANDRO</td><td align="CENTER">CDE</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7208</td><td align="CENTER">OMIL</td><td align="CENTER">TERAPEUTA</td><td align="CENTER">CDE</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7209</td><td align="CENTER">CANDIA</td><td align="CENTER">FRANCISCO</td><td align="CENTER">CDE</td><td align="CENTER">francisco.candia@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7140</td><td align="CENTER">SANTIBANEZ</td><td align="CENTER">MAGDALENA</td><td align="CENTER">CDE</td><td align="CENTER">magdalena.santibanez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7310</td><td align="CENTER">SERNAC</td><td align="CENTER">SERNAC</td><td align="CENTER">CDE</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7139</td><td align="CENTER">VEJAR</td><td align="CENTER">FELIPE</td><td align="CENTER">CDE</td><td align="CENTER">felipe.vejar@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7166</td><td align="CENTER">HUERTA</td><td align="CENTER">KARLA</td><td align="CENTER">CDE</td><td align="CENTER">karla.huerta@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7346</td><td align="CENTER">VILLAVICENCIO</td><td align="CENTER">MARIELLA</td><td align="CENTER">CDE (PRODESAL)</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7347</td><td align="CENTER">HERMOSILLA</td><td align="CENTER">MELANIE</td><td align="CENTER">CDE (PRODESAL)</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7348</td><td align="CENTER">ERICES</td><td align="CENTER">FLOR</td><td align="CENTER">CDE (PRODESAL)</td><td align="CENTER">flor.marias@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7350</td><td align="CENTER">GALLEGUILLOS</td><td align="CENTER">ALVARO</td><td align="CENTER">CDE (PRODESAL)</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7351</td><td align="CENTER">ALMARZA</td><td align="CENTER">RAFAEL</td><td align="CENTER">CDE (PRODESAL)</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">CELULAR </td><td align="CENTER">HERMOSILLA</td><td align="CENTER">ALAN </td><td align="CENTER">CENTRO VETERINARIA</td><td align="CENTER">veterinaria@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7352</td><td align="CENTER">MORENO</td><td align="CENTER">JORGE</td><td align="CENTER">CDE (PRODESAL)</td><td align="CENTER">SIN CORREO</td></tr>
+<tr><td align="CENTER">7354</td><td align="CENTER">HERMOSILLA</td><td align="CENTER">CATALINA</td><td align="CENTER">CDE (PRODESAL)</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7304</td><td align="CENTER">VERDUGO</td><td align="CENTER">MIREYA</td><td align="CENTER">CDE (PROGRAMA FAMILIA)</td><td align="CENTER">mireya.verdugo@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7363</td><td align="CENTER">INOSTROZA</td><td align="CENTER">KATERIN</td><td align="CENTER">CDE (PROGRAMA FAMILIA)</td><td align="CENTER">katerin.inostroza@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7368</td><td align="CENTER">NUNEZ</td><td align="CENTER">ALAN</td><td align="CENTER">CDE (PROGRAMA FAMILIA)</td><td align="CENTER">alan.nunez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7362</td><td align="CENTER">ORTIZ</td><td align="CENTER">PAULA</td><td align="CENTER">CDE (PROGRAMA FAMILIA)</td><td align="CENTER">paula.ortiz@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7364</td><td align="CENTER">NOGUE</td><td align="CENTER">PENELOPE</td><td align="CENTER">CDE (PROGRAMA FAMILIA)</td><td align="CENTER">penelope.nogue@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7365</td><td align="CENTER">PREVIENE </td><td align="CENTER">SENDA</td><td align="CENTER">SEG.PUBLICA</td><td align="CENTER">coordinacion.senda@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7367</td><td align="CENTER">FARIAS</td><td align="CENTER">GABRIELA</td><td align="CENTER">CDE (PROGRAMA FAMILIA)</td><td align="CENTER">gabriela.farias@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7361</td><td align="CENTER">SEPULVEDA</td><td align="CENTER">CLAUDIA</td><td align="CENTER">CDE (PROGRAMA FAMILIA)</td><td align="CENTER">claudia.sepulveda@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7022</td><td align="CENTER">GONZÁLEZ</td><td align="CENTER">PEDRO</td><td align="CENTER">CDE (TURISMO)</td><td align="CENTER">turismo@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7306</td><td align="CENTER">CONEJEROS</td><td align="CENTER">MARGARITA</td><td align="CENTER">CEMENTERIO</td><td align="CENTER">margarita.conejeros@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7318</td><td align="CENTER">ARRIAGADA</td><td align="CENTER">ANGELA</td><td align="CENTER">CEMENTERIO</td><td align="CENTER">angela.arriagada@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7396</td><td align="CENTER">GUTIERRES</td><td align="CENTER">DANIELA</td><td align="CENTER">CEMENTERIO</td><td align="CENTER">daniela.gutierrez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7320</td><td align="CENTER">CATALAN</td><td align="CENTER">IVAN</td><td align="CENTER">CEMENTERIO</td><td align="CENTER">ivan.catalan@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7321</td><td align="CENTER">GIANINI</td><td align="CENTER">CATERINA</td><td align="CENTER">CEMENTERIO</td><td align="CENTER">cementerio@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7333</td><td align="CENTER">CEMENTERIO</td><td align="CENTER">ARCHIVO</td><td align="CENTER">CEMENTERIO</td><td align="CENTER">archivocementerio@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7345</td><td align="CENTER">CEMENTERIO</td><td align="CENTER">BODEGA</td><td align="CENTER">CEMENTERIO</td><td align="CENTER">cementerio@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7397</td><td align="CENTER">AGUIRRE</td><td align="CENTER">JUAN</td><td align="CENTER">CEMENTERIO</td><td align="CENTER">juan.aguirre@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7398</td><td align="CENTER">CEMENTERIO</td><td align="CENTER">ADMINISTRACION</td><td align="CENTER">CEMENTERIO</td><td align="CENTER">fernando.castaneda@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7152</td><td align="CENTER">GONZALEZ</td><td align="CENTER">MIGUEL</td><td align="CENTER">CDE (PRODESAL)</td><td align="CENTER">equipo.prodesal@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7136</td><td align="CENTER">CONTRERAS</td><td align="CENTER">LUIS</td><td align="CENTER">DGA</td><td align="CENTER">luis.contreras@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7137</td><td align="CENTER">MEDEZ</td><td align="CENTER">FRANCISCO</td><td align="CENTER">DGA</td><td align="CENTER">francisco.mendez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7371</td><td align="CENTER">DPTO INSPECCION</td><td align="CENTER"></td><td align="CENTER">SEGURIDAD PUBLICA (VICUÑA MACKENNA)</td><td align="CENTER">jenny.gutierrez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7373</td><td align="CENTER">FIGUEROA</td><td align="CENTER">NICOL</td><td align="CENTER">CENTRO MUJER</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7375</td><td align="CENTER">TORO</td><td align="CENTER">KATHERINE</td><td align="CENTER">CENTRO MUJER</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7376</td><td align="CENTER">HURTADO</td><td align="CENTER">JOSE LUIS</td><td align="CENTER">DIRECCION DE ASESORIA JURIDICA</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7377</td><td align="CENTER">QUIROGA</td><td align="CENTER">PABLO</td><td align="CENTER">ALCALDIA</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7378</td><td align="CENTER">SILVA</td><td align="CENTER">PEDRO</td><td align="CENTER">SEG. PUBLICA</td><td align="CENTER">pedro.silva@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7379</td><td align="CENTER">MARIA TERESA</td><td align="CENTER">ALVAREZ</td><td align="CENTER">COMUNICACIONES</td><td align="CENTER">mariateresa.alvarez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7380</td><td align="CENTER">RODRIGUEZ</td><td align="CENTER">CAMILA</td><td align="CENTER">COMUNICACIONES</td><td align="CENTER">camila.rodriguez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7381</td><td align="CENTER">TRUJILLO</td><td align="CENTER">MARCO</td><td align="CENTER">BODEGA DE EMERGENCIA</td><td align="CENTER">marco.trujillo@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7382</td><td align="CENTER">PORRES</td><td align="CENTER">JESUS</td><td align="CENTER">COMUNICACIONES</td><td align="CENTER">jesus.porres@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7000</td><td align="CENTER">CENTRA</td><td align="CENTER">TELEFONICA</td><td align="CENTER">COMUNICACIONES</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7002</td><td align="CENTER">SANTIBAÑEZ</td><td align="CENTER">DAFNE</td><td align="CENTER">GABINETE</td><td align="CENTER">dafne.santibañez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7191</td><td align="CENTER">ARAUS</td><td align="CENTER">NICOLAS</td><td align="CENTER">COMUNICACIONES</td><td align="CENTER">naraus@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7194</td><td align="CENTER">VALLADARES</td><td align="CENTER">RAFAEL</td><td align="CENTER">COMUNICACIONES</td><td align="CENTER">rafael.valladares@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7198</td><td align="CENTER">SALGADO </td><td align="CENTER">SILVIA</td><td align="CENTER">COMUNICACIONES</td><td align="CENTER">silvia.salgado@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7202</td><td align="CENTER">ROMAN</td><td align="CENTER">MARIA CRISTINA</td><td align="CENTER">COMUNICACIONES</td><td align="CENTER">mariacristina.roman@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7196</td><td align="CENTER">GOMEZ</td><td align="CENTER">BERNARDITA</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">bernardita.gomez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7235</td><td align="CENTER">DIAZ PINTO </td><td align="CENTER">CLAUDIA</td><td align="CENTER">DGA</td><td align="CENTER">claudia.diazpinto@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7243</td><td align="CENTER">BOLADOS</td><td align="CENTER">JOSE MIGUEL</td><td align="CENTER">CONCEJAL</td><td align="CENTER">jose.bolados@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7244</td><td align="CENTER">SALAZAR</td><td align="CENTER">MARTIN</td><td align="CENTER">CONCEJAL</td><td align="CENTER">martin.salazar@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7245</td><td align="CENTER">PALACIOS</td><td align="CENTER">PAOLA</td><td align="CENTER">CONCEJAL</td><td align="CENTER">paola.palacios@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7246</td><td align="CENTER">ACUÑA</td><td align="CENTER">PAMELA</td><td align="CENTER">CONCEJAL</td><td align="CENTER">pamela.acuña@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7247</td><td align="CENTER">CABION</td><td align="CENTER">JOSE LUIS</td><td align="CENTER">CONCEJAL</td><td align="CENTER">jose.cabion@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7248</td><td align="CENTER">MARTINEZ</td><td align="CENTER">NICOLAS</td><td align="CENTER">CONCEJAL</td><td align="CENTER">nicolas.martinez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7249</td><td align="CENTER">LOYOLA</td><td align="CENTER">VICTOR</td><td align="CENTER">CONCEJAL</td><td align="CENTER">victor.loyola@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7250</td><td align="CENTER">CARMONA</td><td align="CENTER">MARIO</td><td align="CENTER">CONCEJAL</td><td align="CENTER">mario.carmona@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7074</td><td align="CENTER">MOLINA</td><td align="CENTER">PRISCILA</td><td align="CENTER">CONTROL</td><td align="CENTER">priscilla.molina@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7107</td><td align="CENTER">CONTROL</td><td align="CENTER">SECRETARIA</td><td align="CENTER">CONTROL</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7172</td><td align="CENTER">RETAMAL</td><td align="CENTER">PATRICIO</td><td align="CENTER">CONTROL</td><td align="CENTER">patricio.retamal@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7173</td><td align="CENTER">RUIZ</td><td align="CENTER">PAULINA</td><td align="CENTER">CONTROL</td><td align="CENTER">paulina.ruiz@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7174</td><td align="CENTER">BUSTOS</td><td align="CENTER">OCTAVIO</td><td align="CENTER">CONTROL</td><td align="CENTER">octavio.bustos@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7176</td><td align="CENTER">ALVAREZ</td><td align="CENTER">DIGNA</td><td align="CENTER">CONTROL</td><td align="CENTER">digna.alvarez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7177</td><td align="CENTER">CABRERA</td><td align="CENTER">XIMENA</td><td align="CENTER">CONTROL</td><td align="CENTER">ximena.cabrera@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7028</td><td align="CENTER">MUÑOZ</td><td align="CENTER">BARBARA</td><td align="CENTER">CONTROL</td><td align="CENTER">barbara.munoz@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7165</td><td align="CENTER">ABARZUA</td><td align="CENTER">XIMENA</td><td align="CENTER">CONTROL</td><td align="CENTER">ximena.abarzua@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7299</td><td align="CENTER">MUJERES</td><td align="CENTER">DPTO.</td><td align="CENTER">DEPARTAMENTO DE MUJERES</td><td align="CENTER">luis.contreras@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7201</td><td align="CENTER">SILVA </td><td align="CENTER">MARIA CAROLINA</td><td align="CENTER">SEG. PUBLICA</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7300</td><td align="CENTER">GOMEZ</td><td align="CENTER">RICARDO</td><td align="CENTER">DIDECO (DEPORTES)</td><td align="CENTER">ricardo.gomez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7312</td><td align="CENTER">MUNOZ</td><td align="CENTER">FRANCISCO</td><td align="CENTER">DIDECO (DEPORTES)</td><td align="CENTER">francisco.munoz@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7313</td><td align="CENTER">PEREZ GALAZ</td><td align="CENTER">ITALO</td><td align="CENTER">SECPLA</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7014</td><td align="CENTER">BUSTAMANTE</td><td align="CENTER">JUAN PABLO</td><td align="CENTER">DIDECO (DEPORTES)</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7386</td><td align="CENTER">VELIZ</td><td align="CENTER">NICOL</td><td align="CENTER">DGA</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7387</td><td align="CENTER">VALDOVINOS</td><td align="CENTER">FLORENCIO</td><td align="CENTER">DGA</td><td align="CENTER">florencio.valdovinos@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7394</td><td align="CENTER">DIAZ-PINTO</td><td align="CENTER">CLAUDIA</td><td align="CENTER">DGA</td><td align="CENTER">dga@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7389</td><td align="CENTER">REYES</td><td align="CENTER">JESUS</td><td align="CENTER">DGA</td><td align="CENTER">jesus.reyes@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7390</td><td align="CENTER">FIGUEROA</td><td align="CENTER">ELBA </td><td align="CENTER">DGA</td><td align="CENTER">elba.figueroa@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7391</td><td align="CENTER">CASTAÑEDA</td><td align="CENTER">FERNANDO</td><td align="CENTER">DGA</td><td align="CENTER">fernando.castañeda@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7392</td><td align="CENTER">ARMIJO</td><td align="CENTER">RODRIGO</td><td align="CENTER">DGA</td><td align="CENTER">rodrigo.armijo@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7393</td><td align="CENTER">ADASME</td><td align="CENTER">CRISTINA</td><td align="CENTER">DGA</td><td align="CENTER">cristina.adasme@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7395</td><td align="CENTER">BUSTOS</td><td align="CENTER">ALBERTO</td><td align="CENTER">DGA</td><td align="CENTER">alberto.bustos@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7188</td><td align="CENTER">CACERES</td><td align="CENTER">FERNANDO</td><td align="CENTER">DGA</td><td align="CENTER">fernando.caceres@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7189</td><td align="CENTER">AMBIENTE</td><td align="CENTER">MEDIO</td><td align="CENTER">DGA</td><td align="CENTER">medioambiental@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7190</td><td align="CENTER">MENDEZ</td><td align="CENTER">FRANCISCO</td><td align="CENTER">DGA</td><td align="CENTER">francisco.mendez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7302</td><td align="CENTER">FLORES</td><td align="CENTER">PALOMA</td><td align="CENTER">DIDECO</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7326</td><td align="CENTER">VALDOVINOS</td><td align="CENTER">PATRICIA</td><td align="CENTER">DIDECO</td><td align="CENTER">patricia.nunez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7332</td><td align="CENTER">TERRITORIALES</td><td align="CENTER">DIDECO</td><td align="CENTER">DIDECO</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7374</td><td align="CENTER">SANTIBAÑEZ</td><td align="CENTER">TERESITA</td><td align="CENTER">DIDECO</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7133</td><td align="CENTER">VALLADARES</td><td align="CENTER">ELAINNE</td><td align="CENTER">DIDECO</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7144</td><td align="CENTER">GONZALEZ</td><td align="CENTER">FRANCISCA</td><td align="CENTER">DIDECO</td><td align="CENTER">francisca.gonzalez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7324</td><td align="CENTER">ARCE</td><td align="CENTER">CESAR</td><td align="CENTER">DIDECO</td><td align="CENTER">cesar.arce@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7128</td><td align="CENTER">RIVERA</td><td align="CENTER">YESENIA</td><td align="CENTER">DIDECO</td><td align="CENTER">yesenia.rivera@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7232</td><td align="CENTER">QUINTANILLA</td><td align="CENTER">VANESA</td><td align="CENTER">DIDECO</td><td align="CENTER">vanessa.quintanilla@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7282</td><td align="CENTER">VERA</td><td align="CENTER">MARCELA</td><td align="CENTER">DIDECO</td><td align="CENTER">marcela.vera@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7283</td><td align="CENTER">GONZALEZ</td><td align="CENTER">NUBIA</td><td align="CENTER">DIDECO</td><td align="CENTER">nubia.gonzalez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7284</td><td align="CENTER">CALDERON</td><td align="CENTER">SILVIA</td><td align="CENTER">DIDECO</td><td align="CENTER">dideco@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7287</td><td align="CENTER">MALLEA</td><td align="CENTER">CONSTANZA</td><td align="CENTER">DIDECO</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7303</td><td align="CENTER">CABRERA</td><td align="CENTER">RODRIGO</td><td align="CENTER">DIDECO</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7307</td><td align="CENTER">COMUNITARIAS</td><td align="CENTER">ORGANIZACION</td><td align="CENTER">DIDECO</td><td align="CENTER">ocomunitarias@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7309</td><td align="CENTER">PLAZA</td><td align="CENTER">CARLA</td><td align="CENTER">DIDECO</td><td align="CENTER">carla.plaza@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7323</td><td align="CENTER">FARIAS</td><td align="CENTER">OLGA</td><td align="CENTER">DIDECO</td><td align="CENTER">olga.farias@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7286</td><td align="CENTER">CARRASCO</td><td align="CENTER">JACQUELIN</td><td align="CENTER">DIDECO</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7288</td><td align="CENTER">FABIO</td><td align="CENTER">GONZALO</td><td align="CENTER">DIDECO</td><td align="CENTER">gonzalo.fabio@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7289</td><td align="CENTER">MATELUNA</td><td align="CENTER">CAROLINA</td><td align="CENTER">DIDECO</td><td align="CENTER">mcarolina.mateluna@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7328</td><td align="CENTER">NUNEZ</td><td align="CENTER">SOLEDAD</td><td align="CENTER">DIDECO</td><td align="CENTER">soledad.nunez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7342</td><td align="CENTER">GUTIERREZ</td><td align="CENTER">FERNANDO</td><td align="CENTER">DIDECO</td><td align="CENTER">fernando.gutierrez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7301</td><td align="CENTER">VASQUEZ</td><td align="CENTER">JENNIFER</td><td align="CENTER">DIDECO VIVIENDA</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7291</td><td align="CENTER">DIAZ</td><td align="CENTER">NICOLAS</td><td align="CENTER">DIDECO</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7292</td><td align="CENTER">FARIAS</td><td align="CENTER">CONSTANZA</td><td align="CENTER">DIDECO</td><td align="CENTER">constanza.farias@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7293</td><td align="CENTER">SANTIS</td><td align="CENTER">TERESITA</td><td align="CENTER">DIDECO</td><td align="CENTER">teresa.santis@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7294</td><td align="CENTER">ALVAREZ</td><td align="CENTER">ROSANA</td><td align="CENTER">DIDECO</td><td align="CENTER">rosana.alvarez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7298</td><td align="CENTER">SOCIAL DE HOGARES</td><td align="CENTER">REGISTRO</td><td align="CENTER">DIDECO</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7378</td><td align="CENTER">DURAN</td><td align="CENTER">MARLENY</td><td align="CENTER">DIDECO</td><td align="CENTER">marleny.duran@munimelipilla.cl
+</td></tr><tr><td align="CENTER">7308</td><td align="CENTER">COPIA</td><td align="CENTER">ELISA</td><td align="CENTER">DIDECO</td><td align="CENTER">elisa.copia@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7329</td><td align="CENTER">ORELLANA</td><td align="CENTER">DANIEL</td><td align="CENTER">DIDECO (TERRITORIALES)</td><td align="CENTER">daniel.orellana@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7344</td><td align="CENTER">TERRITORIALES</td><td align="CENTER">DIDECO</td><td align="CENTER">DIDECO</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7285</td><td align="CENTER">GONZALEZ</td><td align="CENTER">MARISOL</td><td align="CENTER">DIDECO OF DISCAPACIDAD</td><td align="CENTER">marisol.gonzalez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7305</td><td align="CENTER">TORNGUIST</td><td align="CENTER">IGNACIO</td><td align="CENTER">DIDECO</td><td align="CENTER">apoyoalacrianza@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7046</td><td align="CENTER">TORO</td><td align="CENTER">DORIS</td><td align="CENTER">DIDECO</td><td align="CENTER">doris.toro@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7158</td><td align="CENTER">GUIÑEZ</td><td align="CENTER">JAVIERA</td><td align="CENTER">DIDECO OF DISCAPACIDAD</td><td align="CENTER">javiera.guinez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7325</td><td align="CENTER">NOGUE</td><td align="CENTER">PENELOPE</td><td align="CENTER">DIDECO</td><td align="CENTER">penelope.nogue@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7169</td><td align="CENTER">QUIROGA</td><td align="CENTER">VALENTIN</td><td align="CENTER">DIDECO </td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7338</td><td align="CENTER">SANTIS</td><td align="CENTER">DANIELA</td><td align="CENTER">DIDECO </td><td align="CENTER">daniela.Santis@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7339</td><td align="CENTER">ROJAS</td><td align="CENTER">DANIEL</td><td align="CENTER">DIDECO </td><td align="CENTER">daniel.rojas@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7340</td><td align="CENTER">BARRERA</td><td align="CENTER">NATALIA</td><td align="CENTER">DIDECO</td><td align="CENTER">natalia.barrera@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7153</td><td align="CENTER">HERNANDEZ</td><td align="CENTER">PAUL</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">paul.hernandez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7196</td><td align="CENTER">MONTSERRAT</td><td align="CENTER">CATHERINA</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">catherina.montserrat@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7211</td><td align="CENTER">GALLEGUILLOS</td><td align="CENTER">CARMEN LUZ</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">carmenluz.galleguillos@munimelipilla.cl alumbrado.publico@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7210</td><td align="CENTER">OFICINA</td><td align="CENTER">OPERACIONES</td><td align="CENTER">SEG.E.INSPECCION</td><td align="CENTER">sp.operaciones@munimelipilla.cl
+</td></tr><tr><td align="CENTER">7212</td><td align="CENTER">ARENAS</td><td align="CENTER">MACARENA</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">macarena.arenas@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7217</td><td align="CENTER">QUIROZ</td><td align="CENTER">MIGUEL</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">miguel.quiroz@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7220</td><td align="CENTER">TOMASEVIC</td><td align="CENTER">SAMANTHA</td><td align="CENTER">DIREC. DE OBRAS (MESON)</td><td align="CENTER">samantha.tomasevic@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7227</td><td align="CENTER">AGUIRRE</td><td align="CENTER">GERMAN</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">german.aguirre@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7231</td><td align="CENTER">FONSECA</td><td align="CENTER">MARCOS</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">marco.fonseca@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7233</td><td align="CENTER">SANTIBAÑEZ</td><td align="CENTER">DAFNE</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">dafne.santibanez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7012</td><td align="CENTER">ZUNIGA</td><td align="CENTER">ALEJANDRA</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">alejandra.zuniga@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7070</td><td align="CENTER">GUAJARDO</td><td align="CENTER">MAXIMILIANO</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">maximiliano.guajardo@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7213</td><td align="CENTER">BAHAMONDES</td><td align="CENTER">PAULO</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">paulo.bahamondes@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7216</td><td align="CENTER">URBANISMO</td><td align="CENTER"></td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">SIN CORREO</td></tr>
+<tr><td align="CENTER">7088</td><td align="CENTER">MANZO</td><td align="CENTER">JORDAN</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">jordan.manzo@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7215</td><td align="CENTER">DONOSO</td><td align="CENTER">XIMENA</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">ximena.donoso@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7218</td><td align="CENTER">INSPECTOR</td><td align="CENTER">DOM</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">sebastian.cordova@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7221</td><td align="CENTER">MEJIAS</td><td align="CENTER">ARTURO</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">arturo.mejias@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7223</td><td align="CENTER">CHAVARRIA</td><td align="CENTER">PAULO</td><td align="CENTER">DGA</td><td align="CENTER">paulo.chavarria@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7224</td><td align="CENTER">ARTIGAS</td><td align="CENTER">CARLOS</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">carlos.artigas@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7225</td><td align="CENTER">MUNOZ</td><td align="CENTER">IGNACIO</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">ignacio.munoz@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7226</td><td align="CENTER">RAMOS</td><td align="CENTER">MANUEL</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">manuel.ramos@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7229</td><td align="CENTER">PINTO</td><td align="CENTER">CHRISTIAN</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">christian.pinto@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7230</td><td align="CENTER">MEZA (S.I.M.)</td><td align="CENTER">ESTEBAN</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">esteban.meza@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7214</td><td align="CENTER">LETELIER</td><td align="CENTER">GABRIELA</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">gabriela.letelier@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7219</td><td align="CENTER">GUAJARDO</td><td align="CENTER">WINTON</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">SIN CORREO</td></tr>
+<tr><td align="CENTER">7236</td><td align="CENTER">COLINA</td><td align="CENTER">RONALD</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">ronald.colina@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7083</td><td align="CENTER">ARAUS</td><td align="CENTER">MONSERRAT</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7093</td><td align="CENTER">LAMAR</td><td align="CENTER">JEANNE</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">jeanne.lamar@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7009</td><td align="CENTER">CALDERON ESTAY</td><td align="CENTER">VERONICA</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">veronica.calderon@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7254</td><td align="CENTER">TOMASEVIC</td><td align="CENTER">SAMANTHA</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">samantha.tomasevic@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7359</td><td align="CENTER">ENCINA</td><td align="CENTER">FRANCISCA</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">francisca.encina@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7181</td><td align="CENTER">PEÑA</td><td align="CENTER">KATYUSKA</td><td align="CENTER">DIDECO1 (EDLI)</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7311</td><td align="CENTER">ASTORGA</td><td align="CENTER">CAROLINA</td><td align="CENTER">BODEGA DE EMERGENCIA</td><td align="CENTER">emergencia@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7384</td><td align="CENTER">ASTUDILLO</td><td align="CENTER">CAMILO</td><td align="CENTER">BODEGA DE EMERGENCIA</td><td align="CENTER">camilo.astudillo@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7385</td><td align="CENTER">ARMIJO</td><td align="CENTER">DAISY</td><td align="CENTER">BODEGA DE EMERGENCIA</td><td align="CENTER">daisy.armijo@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7297</td><td align="CENTER">PORTUGUEZ</td><td align="CENTER">RODRIGO</td><td align="CENTER">BODEGA DE EMERGENCIA</td><td align="CENTER">rodrigo.portuguez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7082</td><td align="CENTER">GUAJARDO</td><td align="CENTER">YOANNA</td><td align="CENTER">DAF</td><td align="CENTER">yoanna.guajardo@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7104</td><td align="CENTER">FINANZAS</td><td align="CENTER">SECRETARIA</td><td align="CENTER">DAF</td><td align="CENTER">finanzas@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7105</td><td align="CENTER">PINA</td><td align="CENTER">BRIAN</td><td align="CENTER">DAF</td><td align="CENTER">brian.pina@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7121</td><td align="CENTER">QUINTANILLA</td><td align="CENTER">CLAUDIA</td><td align="CENTER">DAF</td><td align="CENTER">claudia.quintanilla@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7125</td><td align="CENTER">ESCAIDA</td><td align="CENTER">SEBASTIAN</td><td align="CENTER">DAF</td><td align="CENTER">sebastian.escaida@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7008</td><td align="CENTER">WERCHEZ</td><td align="CENTER">MARCIA</td><td align="CENTER">DAF</td><td align="CENTER">marcia.werchez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7044</td><td align="CENTER">SOTOMAYOR</td><td align="CENTER">MARIANGEL</td><td align="CENTER">ADQUISICIONES</td><td align="CENTER">mariangel.sotomayor@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7106</td><td align="CENTER">FINOL</td><td align="CENTER">JENNIFER</td><td align="CENTER">DAF</td><td align="CENTER">jennifer.finol@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7114</td><td align="CENTER">VALENZUELA</td><td align="CENTER">MATIAS</td><td align="CENTER">DAF</td><td align="CENTER">matias.valenzuela@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7197</td><td align="CENTER">GABINETE</td><td align="CENTER">SECRETARIA</td><td align="CENTER">GABINETE</td><td align="CENTER">gabinete@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7010</td><td align="CENTER">SEGURIDAD</td><td align="CENTER">GUARDIA</td><td align="CENTER">GUARDIA MUNICIPALIDAD</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7011</td><td align="CENTER">LETELIER </td><td align="CENTER">GABRIELA</td><td align="CENTER">DOM</td><td align="CENTER">gabriela.letelier@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7095</td><td align="CENTER">ORELLANA</td><td align="CENTER">DIEGO</td><td align="CENTER">DEPARTAMENTO DE INFORMÁTICA</td><td align="CENTER">diego.orellana@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7048</td><td align="CENTER">ORTIZ NEIRA</td><td align="CENTER">LIMBI</td><td align="CENTER">DEPARTAMENTO DE INFORMÁTICA</td><td align="CENTER">limbi.ortiz@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7049</td><td align="CENTER">SOTO</td><td align="CENTER">DAVID</td><td align="CENTER">DEPARTAMENTO DE INFORMÁTICA</td><td align="CENTER">david.soto@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7051</td><td align="CENTER">SUAZO</td><td align="CENTER">CRISTIAN</td><td align="CENTER">DEPARTAMENTO DE INFORMÁTICA</td><td align="CENTER">Informatica@munimelipilla.cl cristian.suazo@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7053</td><td align="CENTER">CONTRERAS</td><td align="CENTER">DANGELLO</td><td align="CENTER">DEPARTAMENTO DE INFORMÁTICA</td><td align="CENTER">dangello.contreras@munimelipilla.cl </td></tr>
+<tr><td align="CENTER">7057</td><td align="CENTER">ASTORGA</td><td align="CENTER">JAIME</td><td align="CENTER">DEPARTAMENTO DE INFORMÁTICA</td><td align="CENTER">jaime.astorga@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7269</td><td align="CENTER">CHILE</td><td align="CENTER">CAS</td><td align="CENTER">DEPARTAMENTO DE INFORMÁTICA</td><td align="CENTER">informatica@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7163</td><td align="CENTER">MARIA TERESA</td><td align="CENTER">SANCHEZ</td><td align="CENTER">DEPARTAMENTO DE INFORMÁTICA</td><td align="CENTER">maria.sanchez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7315</td><td align="CENTER">CASTAÑEDA</td><td align="CENTER">DANIELA</td><td align="CENTER">DEPARTAMENTO DE INFORMÁTICA</td><td align="CENTER">daniela.castañeda@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7360</td><td align="CENTER">SILVA</td><td align="CENTER">MARCO</td><td align="CENTER">DEPARTAMENTO DE INFORMÁTICA</td><td align="CENTER">marco.silva@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7143</td><td align="CENTER">FREDES</td><td align="CENTER">BELARMINO</td><td align="CENTER">INSPECCION</td><td align="CENTER">belarmino.fredes@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7146</td><td align="CENTER">NUÑEZ</td><td align="CENTER">CLAUDIO</td><td align="CENTER">INSPECCION</td><td align="CENTER">inspeccion@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7148</td><td align="CENTER">ZUNIGA</td><td align="CENTER">SEBASTIAN</td><td align="CENTER">INSPECCION</td><td align="CENTER">sebastian.zuniga@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7241</td><td align="CENTER">DUHAMEL</td><td align="CENTER">SOFIA</td><td align="CENTER">JPL</td><td align="CENTER">sofia.duhamel@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7073</td><td align="CENTER">ALVARADO</td><td align="CENTER">CRISTIAN</td><td align="CENTER">JPL</td><td align="CENTER">cristian.alvarado@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7058</td><td align="CENTER">DE LA RIVERA</td><td align="CENTER">ALEJANDRO</td><td align="CENTER">JPL</td><td align="CENTER">alejandro.delarivera@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7060</td><td align="CENTER">ROJAS</td><td align="CENTER">PAULA</td><td align="CENTER">JPL</td><td align="CENTER">paula.rojas@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7059</td><td align="CENTER">ANGELES</td><td align="CENTER">MARIA DE LOS</td><td align="CENTER">JPL</td><td align="CENTER">maria.palacios@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7061</td><td align="CENTER">SILVA</td><td align="CENTER">MARIA ISABEL</td><td align="CENTER">JPL</td><td align="CENTER">juzgadopolicialocal@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7062</td><td align="CENTER">GARATE</td><td align="CENTER">ANA</td><td align="CENTER">JPL</td><td align="CENTER">ana.garate@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7063</td><td align="CENTER">GRANIFO</td><td align="CENTER">ESTRELLA</td><td align="CENTER">JPL</td><td align="CENTER">estrella.granifo@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7064</td><td align="CENTER">SALAS</td><td align="CENTER">ZAIDA</td><td align="CENTER">JPL</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7065</td><td align="CENTER">ALVAREZ</td><td align="CENTER">PERLA</td><td align="CENTER">JPL</td><td align="CENTER">perla.alvarez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7066</td><td align="CENTER">ORTIZ</td><td align="CENTER">SERGIO</td><td align="CENTER">JPL</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7067</td><td align="CENTER">ORTIZ</td><td align="CENTER">PAULINA</td><td align="CENTER">JPL</td><td align="CENTER">paulina.ortiz@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7075</td><td align="CENTER">ESTRADO</td><td align="CENTER">JUEZ</td><td align="CENTER">JPL</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7252</td><td align="CENTER">GALLARDO</td><td align="CENTER">FERNANDA</td><td align="CENTER">JPL</td><td align="CENTER">fernanda.gallardo@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7006</td><td align="CENTER">AGUILAR</td><td align="CENTER">ANDREA</td><td align="CENTER">JPL</td><td align="CENTER">andrea.aguilar@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7078</td><td align="CENTER">ACUÑA</td><td align="CENTER">ALEJANDRA</td><td align="CENTER">DIRECCION DE ASESORIA JURIDICA</td><td align="CENTER">alejandra.acuna@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7068</td><td align="CENTER">LOPEZ</td><td align="CENTER">CAROLINA</td><td align="CENTER">DIRECCION DE ASESORIA JURIDICA</td><td align="CENTER">carolina.lopez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7069</td><td align="CENTER">JURIDICO</td><td align="CENTER">SECRETARIA</td><td align="CENTER">DIRECCION DE ASESORIA JURIDICA</td><td align="CENTER">juridico@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7071</td><td align="CENTER">NILO</td><td align="CENTER">ALEJANDRO</td><td align="CENTER">DIRECCION DE ASESORIA JURIDICA</td><td align="CENTER">alejandro.nilo@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7076</td><td align="CENTER">CARREÑO</td><td align="CENTER">LUIS</td><td align="CENTER">DIRECCION DE ASESORIA JURIDICA</td><td align="CENTER">luis.carreno@munimelipilla.cl </td></tr>
+<tr><td align="CENTER">7077</td><td align="CENTER">HINOJOSA</td><td align="CENTER">PABLO</td><td align="CENTER">DIRECCION DE ASESORIA JURIDICA</td><td align="CENTER">pablo.hinojosa@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7079</td><td align="CENTER">LOPEZ</td><td align="CENTER">NICOLE</td><td align="CENTER">DIRECCION DE ASESORIA JURIDICA</td><td align="CENTER">nicole.lopez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7130</td><td align="CENTER">NEGRETE</td><td align="CENTER">PILAR</td><td align="CENTER">DIRECCION DE ASESORIA JURIDICA</td><td align="CENTER">pilar.negrete@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7192</td><td align="CENTER">PINTO</td><td align="CENTER">MACARENA</td><td align="CENTER">DIRECCION DE ASESORIA JURIDICA</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7251</td><td align="CENTER">CHIGUAY</td><td align="CENTER">CLAUDIA</td><td align="CENTER">DIRECCION DE ASESORIA JURIDICA</td><td align="CENTER">claudia.chiguay@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7167</td><td align="CENTER">GALINDO</td><td align="CENTER">CAROLINA</td><td align="CENTER">DIRECCION DE ASESORIA JURIDICA</td><td align="CENTER">carolina.galindo@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7027</td><td align="CENTER">CASCHILE</td><td align="CENTER">LICENCIAS</td><td align="CENTER">LICENCIAS DE CONDUCIR</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7154</td><td align="CENTER">XIMENA </td><td align="CENTER">ABARZUA</td><td align="CENTER">MOVILIZACION</td><td align="CENTER">ximena.abarzua@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7149</td><td align="CENTER">CESPEDES</td><td align="CENTER">PATRICIO</td><td align="CENTER">MOVILIZACION</td><td align="CENTER">patricio.cespedes@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7150</td><td align="CENTER">ARRIAGADA</td><td align="CENTER">MABEL</td><td align="CENTER">MOVILIZACION</td><td align="CENTER">mabel.arriagada@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7161</td><td align="CENTER">ROJAS</td><td align="CENTER">EDUARDO</td><td align="CENTER">MOVILIZACION</td><td align="CENTER">eduardo.rojas@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7319</td><td align="CENTER">MOVILIZACION</td><td align="CENTER">CASINO</td><td align="CENTER">MOVILIZACION</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7007</td><td align="CENTER">KIARA</td><td align="CENTER">JARAMILLO</td><td align="CENTER">MOVILIZACION</td><td align="CENTER">kiara.jaramillo@munimelipilla</td></tr>
+<tr><td align="CENTER">7195</td><td align="CENTER">CAMUS</td><td align="CENTER">ALEJANDRA</td><td align="CENTER">MOVILIZACION</td><td align="CENTER">alejandra.camus@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7235</td><td align="CENTER">SANTIBAÑEZ</td><td align="CENTER">DAFNE</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">dafne.santibanez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7159</td><td align="CENTER">BRIONES</td><td align="CENTER">ISIS</td><td align="CENTER">OF. DE VIVIENDA.</td><td align="CENTER">isis.briones@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">SIN ANEXO</td><td align="CENTER">NICOLE</td><td align="CENTER">ROJAS</td><td align="CENTER">OF. PARTES</td><td align="CENTER">nicole.rojas@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7023</td><td align="CENTER">ROJAS</td><td align="CENTER">NICOL</td><td align="CENTER">OF. PARTES</td><td align="CENTER">municipalidad@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7024</td><td align="CENTER">MARDONES</td><td align="CENTER">JUANITA OIRS</td><td align="CENTER">OF. PARTES</td><td align="CENTER">oficinapartes@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7025</td><td align="CENTER">CUEVAS</td><td align="CENTER">LORETO</td><td align="CENTER">OF. PARTES</td><td align="CENTER">loreto.cuevas@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7200</td><td align="CENTER">OMIL</td><td align="CENTER">EJECUTIVO</td><td align="CENTER">CDE (OMIL)</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7203</td><td align="CENTER">EMPRESAS</td><td align="CENTER">OMIL</td><td align="CENTER">CDE (OMIL)</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7204</td><td align="CENTER">OMIL</td><td align="CENTER">EJECUTIVO</td><td align="CENTER">CDE (OMIL)</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7205</td><td align="CENTER">SOTO</td><td align="CENTER">CAMILA</td><td align="CENTER">CDE (OMIL)</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7206</td><td align="CENTER">OMIL</td><td align="CENTER">EJECUTIVO</td><td align="CENTER">CDE (OMIL)</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7038</td><td align="CENTER">HUMANOS</td><td align="CENTER">RECURSOS</td><td align="CENTER">PERSONAL</td><td align="CENTER">personal@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7003</td><td align="CENTER">CARRENO</td><td align="CENTER">JONATHAN</td><td align="CENTER">PERSONAL</td><td align="CENTER">Jonathan.carreno@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7040</td><td align="CENTER">CAMPOS</td><td align="CENTER">TANIA</td><td align="CENTER">PERSONAL</td><td align="CENTER">registroasistencia@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7041</td><td align="CENTER">ARMIJO</td><td align="CENTER">MARIA JOSE</td><td align="CENTER">PERSONAL</td><td align="CENTER">mariajose.valdes@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7042</td><td align="CENTER">QUIROGA</td><td align="CENTER">MARIA IGNACIA</td><td align="CENTER">PERSONAL</td><td align="CENTER">maria.quiroga@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7080</td><td align="CENTER">CUEVAS</td><td align="CENTER">FRANCISCO</td><td align="CENTER">PERSONAL</td><td align="CENTER">francisco.cuevas@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7124</td><td align="CENTER">MARIN</td><td align="CENTER">DANIELA</td><td align="CENTER">PERSONAL</td><td align="CENTER">bienestar@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7131</td><td align="CENTER">SANCHEZ TONDRO</td><td align="CENTER">RODRIGO</td><td align="CENTER">PERSONAL</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7035</td><td align="CENTER">CESPEDES</td><td align="CENTER">JUDITH</td><td align="CENTER">PERSONAL</td><td align="CENTER">judith.cespedes@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7164</td><td align="CENTER">NATALIA</td><td align="CENTER">VELASQUEZ</td><td align="CENTER">PERSONAL</td><td align="CENTER">natalia.velasquez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7372</td><td align="CENTER">OPA</td><td align="CENTER">PROGRAMA</td><td align="CENTER">SECPLA</td><td align="CENTER">carolina.hettich@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7033</td><td align="CENTER">FARIAS</td><td align="CENTER">SEBASTIAN</td><td align="CENTER">PREVENCION</td><td align="CENTER">prevencionista@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7186</td><td align="CENTER">NAYADET</td><td align="CENTER">SANTIS</td><td align="CENTER">PREVENCION</td><td align="CENTER">SIN CORREO</td></tr>
+<tr><td align="CENTER">7132</td><td align="CENTER">VIRELLES</td><td align="CENTER">ELISABET</td><td align="CENTER">RECURSOS HUMANOS (BIENESTAR)</td><td align="CENTER">elisabet.virelles@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7175</td><td align="CENTER">PIÑA</td><td align="CENTER">VALERIA</td><td align="CENTER">RECURSOS HUMANOS (BIENESTAR)</td><td align="CENTER">valeria.pina@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7101</td><td align="CENTER">MAUREIRA</td><td align="CENTER">FABIOLA</td><td align="CENTER">RECURSOS HUMANOS (OF. SIAPER)</td><td align="CENTER">fabiola.maureira@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7030</td><td align="CENTER">VELIZ</td><td align="CENTER">PATRICIA</td><td align="CENTER">RECURSOS HUMANOS (OF. SIAPER)</td><td align="CENTER">apoyo.siaper@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7047</td><td align="CENTER">CARRASCO</td><td align="CENTER">MARITZA</td><td align="CENTER">RECURSOS HUMANOS (REMUNERACIONES)</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7039</td><td align="CENTER">CARRENO</td><td align="CENTER">ALEJANDRA</td><td align="CENTER">RECURSOS HUMANOS (OF. SIAPER)</td><td align="CENTER">alejandra.carreno@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7100</td><td align="CENTER">HENRÍQUEZ</td><td align="CENTER">ALEXANDER</td><td align="CENTER">ADMINISTRACIÓN</td><td align="CENTER">alexander.henriquez@munimelipilla.cl </td></tr>
+<tr><td align="CENTER">7281</td><td align="CENTER">MORALES</td><td align="CENTER">NICOLAS</td><td align="CENTER">RECURSOS HUMANOS (REMUNERACIONES)</td><td align="CENTER">nicolas.morales@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7182</td><td align="CENTER">PAILAMILLA</td><td align="CENTER">PATRICIA</td><td align="CENTER">RECURSOS HUMANOS (SIAPER)</td><td align="CENTER">patricia.pailamilla@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7043</td><td align="CENTER">MARIN</td><td align="CENTER">GUADALUPE</td><td align="CENTER">REMUNERACIONES</td><td align="CENTER">guadalupe.marin@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7045</td><td align="CENTER">OYANEDEL</td><td align="CENTER">CATALINA</td><td align="CENTER">REMUNERACIONES</td><td align="CENTER">catalina.oyanedel@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7145</td><td align="CENTER">FRIAS</td><td align="CENTER">JAZMIN</td><td align="CENTER">PERSONAL</td><td align="CENTER">jazmin.frias@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7316</td><td align="CENTER">HUERTA</td><td align="CENTER">CARMEN</td><td align="CENTER">REMUNERACIONES</td><td align="CENTER">carmen.huerta@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7147</td><td align="CENTER">CONTRERAS</td><td align="CENTER">ROSSANA</td><td align="CENTER">RENTAS Y PATENTES</td><td align="CENTER">rosanna.contreras@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7109</td><td align="CENTER">SCHULTZE</td><td align="CENTER">CARLOS</td><td align="CENTER">RENTAS Y PATENTES</td><td align="CENTER">carlos.schultze@munimelipilla.cl </td></tr>
+<tr><td align="CENTER">7110</td><td align="CENTER">VERA</td><td align="CENTER">PATRICIO</td><td align="CENTER">RENTAS Y PATENTES</td><td align="CENTER">patricio.vera@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7111</td><td align="CENTER">CESPEDES</td><td align="CENTER">JORGE</td><td align="CENTER">RENTAS Y PATENTES</td><td align="CENTER">jorge.cespedes@munimelipilla.cl </td></tr>
+<tr><td align="CENTER">7116</td><td align="CENTER">VASQUEZ</td><td align="CENTER">NATALIA</td><td align="CENTER">RENTAS Y PATENTES</td><td align="CENTER">natalia.vasquez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7117</td><td align="CENTER">FRANCISCO</td><td align="CENTER">CAMUS</td><td align="CENTER">RENTAS Y PATENTES</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7126</td><td align="CENTER">OLMEDO</td><td align="CENTER">JENNIFER</td><td align="CENTER">RENTAS Y PATENTES</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7156</td><td align="CENTER">TORO</td><td align="CENTER">SEBASTIAN</td><td align="CENTER">RENTAS Y PATENTES</td><td align="CENTER">bastian.ortega@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7112</td><td align="CENTER">DONOSO</td><td align="CENTER">KARIN</td><td align="CENTER">RENTAS Y PATENTES</td><td align="CENTER">karin.donoso@munimelipilla.cl </td></tr>
+<tr><td align="CENTER">7255</td><td align="CENTER">BECERRA</td><td align="CENTER">TAMARA</td><td align="CENTER">RENTAS Y PATENTES</td><td align="CENTER">tamara.becerra@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7015</td><td align="CENTER">GUAICO</td><td align="CENTER">JORGE</td><td align="CENTER">SECMU</td><td align="CENTER">jorge.guaico@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7018</td><td align="CENTER">OLIVARES</td><td align="CENTER">ALEJANDRA</td><td align="CENTER">SECMU</td><td align="CENTER">alejandra.olivares@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7019</td><td align="CENTER">HERNANDEZ</td><td align="CENTER">MARIA</td><td align="CENTER">SECMU</td><td align="CENTER">maria.hernandez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7020</td><td align="CENTER">GOMEZ</td><td align="CENTER">NELSON</td><td align="CENTER">SECMU</td><td align="CENTER">nelson.gomez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7026</td><td align="CENTER">OSORIO</td><td align="CENTER">DANIELA</td><td align="CENTER">SECMU (OF. TRASPARENCIA)</td><td align="CENTER">daniela.osorio@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7029</td><td align="CENTER">GONZALEZ</td><td align="CENTER">ANDREA</td><td align="CENTER">SECMU (OF. TRASPARENCIA)</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7084</td><td align="CENTER">LOZANO</td><td align="CENTER">PABLO</td><td align="CENTER">SECPLA</td><td align="CENTER">pablo.lozano@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7085</td><td align="CENTER">SANCHEZ</td><td align="CENTER">JUAN PABLO</td><td align="CENTER">SECPLA</td><td align="CENTER">juanpablo.sanchez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7086</td><td align="CENTER">ORELLANA</td><td align="CENTER">CONSTANZA</td><td align="CENTER">SECPLA</td><td align="CENTER">constanza.orellana@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7087</td><td align="CENTER">MUGA</td><td align="CENTER">CONSTANZA</td><td align="CENTER">SECPLA</td><td align="CENTER">secpla@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7089</td><td align="CENTER">PAVEZ</td><td align="CENTER">PAULINA</td><td align="CENTER">SECPLA</td><td align="CENTER">paulina.pavez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7090</td><td align="CENTER">SANDOVAL</td><td align="CENTER">FRANCISCO</td><td align="CENTER">SECPLA</td><td align="CENTER">francisco.sandoval@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7091</td><td align="CENTER">QUIROZ</td><td align="CENTER">ANGEL</td><td align="CENTER">SECPLA</td><td align="CENTER">angel.quiroz@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7092</td><td align="CENTER">MARROQUIN</td><td align="CENTER">CAMILO</td><td align="CENTER">SECPLA</td><td align="CENTER">camilo.marroquin@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7094</td><td align="CENTER">MADRID</td><td align="CENTER">EDUARDO</td><td align="CENTER">SECPLA</td><td align="CENTER">eduardo.madrid@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7096</td><td align="CENTER">PEZOA</td><td align="CENTER">MARIO</td><td align="CENTER">SECPLA</td><td align="CENTER">mario.pezoa@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7222</td><td align="CENTER">MARTINEZ</td><td align="CENTER">ISABEL</td><td align="CENTER">SECPLA</td><td align="CENTER">isabel.martinez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7242</td><td align="CENTER">GARRIDO</td><td align="CENTER">JUAN RICARDO</td><td align="CENTER">SECPLA</td><td align="CENTER">jricardo.garrido@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7274</td><td align="CENTER">ALARCON</td><td align="CENTER">LUCERO</td><td align="CENTER">SECPLA</td><td align="CENTER">lucero.alarcon@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7275</td><td align="CENTER">BUSTOS</td><td align="CENTER">ANGEL</td><td align="CENTER">SECPLA</td><td align="CENTER">constanza.muga@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7276</td><td align="CENTER">ROMERO</td><td align="CENTER">BEATRIZ</td><td align="CENTER">SECPLA</td><td align="CENTER">beatriz.romero@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7277</td><td align="CENTER">INOSTROZA</td><td align="CENTER">JENNIFER</td><td align="CENTER">SECPLA</td><td align="CENTER">jennifer.inostroza@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7327</td><td align="CENTER">CARRASCO</td><td align="CENTER">SALVADOR</td><td align="CENTER">SECPLA</td><td align="CENTER">salvador.carrasco@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7142</td><td align="CENTER">JERIA</td><td align="CENTER">CESAR</td><td align="CENTER">SECPLA</td><td align="CENTER">cesar.jeria@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7157</td><td align="CENTER">GODOY</td><td align="CENTER">FERNANDO</td><td align="CENTER">SECPLA</td><td align="CENTER">fernando.godoy@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7115</td><td align="CENTER">CAMILA</td><td align="CENTER">WIEGAND</td><td align="CENTER">SECPLA</td><td align="CENTER">camila.wiegand@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7336</td><td align="CENTER">SILVA</td><td align="CENTER">IGNACIO</td><td align="CENTER">SECPLA</td><td align="CENTER">ignacio.silva@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7343</td><td align="CENTER">NATALIA</td><td align="CENTER">IBARRA</td><td align="CENTER">SECPLA</td><td align="CENTER">natalia.ibarra@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7127</td><td align="CENTER">PENA</td><td align="CENTER">FELIPE</td><td align="CENTER">SECRET. CONSEJO</td><td align="CENTER">felipe.pena@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7016</td><td align="CENTER">GALLARDO</td><td align="CENTER">MARLENE</td><td align="CENTER">SECRET. CONSEJO</td><td align="CENTER">secretariaconcejo@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7032</td><td align="CENTER">ADMINISTRADOR</td><td align="CENTER">SECRETARIA</td><td align="CENTER">SECRETARIA ADMINISTRADOR MUNICIPAL</td><td align="CENTER">administracion@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7032</td><td align="CENTER">LECAROS</td><td align="CENTER">FÉRNAN</td><td align="CENTER">ADMINISTRADOR MUNICIPAL</td><td align="CENTER">administracion@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7134</td><td align="CENTER">FUENTES</td><td align="CENTER">PATRICIO</td><td align="CENTER">SEG. PUBLICA</td><td align="CENTER">patricio.fuentes@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7135</td><td align="CENTER">ARREDONDO</td><td align="CENTER">ANDREA</td><td align="CENTER">SEG. PUBLICA</td><td align="CENTER">andrea.arredondo@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7184</td><td align="CENTER">OPERADORAS</td><td align="CENTER">RADIO</td><td align="CENTER">SEG. PUBLICA</td><td align="CENTER">seguridadpublica@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7129</td><td align="CENTER">CAMILA</td><td align="CENTER">ALVARADO</td><td align="CENTER">SEG. PUBLICA</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7185</td><td align="CENTER">PADILLA</td><td align="CENTER">MIGUEL</td><td align="CENTER">SEG. PUBLICA E INSPECCION</td><td align="CENTER">op.seguridad@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7240</td><td align="CENTER">MIRANDA</td><td align="CENTER">MARINA</td><td align="CENTER">SEG. PUBLICA E INSPECCION</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7103</td><td align="CENTER">SEGURIDAD</td><td align="CENTER">HUMANA</td><td align="CENTER">SEGURIDAD HUMANA</td><td align="CENTER">seguridadhumanamelipilla@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7054</td><td align="CENTER">DATACENTER</td><td align="CENTER">PRAT 926</td><td align="CENTER">SEGURIDAD HUMANA</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7383</td><td align="CENTER">NUNEZ</td><td align="CENTER">CESAR</td><td align="CENTER">RENTAS Y PATENTES</td><td align="CENTER">cesar.nuñez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7160</td><td align="CENTER">GENERALES</td><td align="CENTER">SERVICIOS</td><td align="CENTER">SERVICIOS GENERALES</td><td align="CENTER">serviciosgenerales@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7234</td><td align="CENTER">GOMEZ</td><td align="CENTER">HUGO</td><td align="CENTER">SERVICIOS GENERALES</td><td align="CENTER">hugo.gomez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7193</td><td align="CENTER">CANTILLANA</td><td align="CENTER">VANESSA</td><td align="CENTER">TEATRO SERRANO</td><td align="CENTER">vanessa.cantillana@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7239</td><td align="CENTER">CULTURA</td><td align="CENTER">DEPTO</td><td align="CENTER">TEATRO SERRANO</td><td align="CENTER">teatroserrano@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7036</td><td align="CENTER">CADENAS</td><td align="CENTER">AIDA</td><td align="CENTER">TEATRO SERRANO</td><td align="CENTER">aida.cadenas@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7017</td><td align="CENTER">MORENO</td><td align="CENTER">MARCELA</td><td align="CENTER">TEATRO SERRANO</td><td align="CENTER">marcela.moreno@munimelipilla.cl culturasartesypatrimonio@munimelipilla.cl equipotecnico.cultura@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7237</td><td align="CENTER">RECEPCION</td><td align="CENTER">TEATRO</td><td align="CENTER">TEATRO SERRANO</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7238</td><td align="CENTER">SALA CONTROL</td><td align="CENTER">TEATRO</td><td align="CENTER">TEATRO SERRANO</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7108</td><td align="CENTER">ACEVEDO</td><td align="CENTER">CESAR</td><td align="CENTER">TESORERIA</td><td align="CENTER">cesar.acevedo@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7113</td><td align="CENTER">MUNOZ</td><td align="CENTER">MIRIAM</td><td align="CENTER">TESORERIA</td><td align="CENTER">miriam.munoz@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7118</td><td align="CENTER">MEZA</td><td align="CENTER">CAROL</td><td align="CENTER">TESORERIA</td><td align="CENTER">carol.meza@munimelipilla.cl tesoreria@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7119</td><td align="CENTER">TORO</td><td align="CENTER">CECILIA</td><td align="CENTER">TESORERIA</td><td align="CENTER">cecilia.toro@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7120</td><td align="CENTER">BENAVIDES</td><td align="CENTER">VIVIANA</td><td align="CENTER">TESORERIA</td><td align="CENTER">viviana.benavides@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7122</td><td align="CENTER">VIDAL</td><td align="CENTER">NELSON</td><td align="CENTER">TESORERIA</td><td align="CENTER">nelson.vidal@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7123</td><td align="CENTER">MARQUEZ</td><td align="CENTER">CAROLINA</td><td align="CENTER">TESORERIA</td><td align="CENTER">carolina.marquez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7399</td><td align="CENTER">VERA</td><td align="CENTER">LUIS</td><td align="CENTER">TESORERIA</td><td align="CENTER">SIN CORREO</td></tr>
+<tr><td align="CENTER">7162</td><td align="CENTER">VIERA</td><td align="CENTER">TOMAS</td><td align="CENTER">TESORERIA</td><td align="CENTER">tomas.viera@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7180</td><td align="CENTER">GARATE</td><td align="CENTER">GONZALO</td><td align="CENTER">TESORERIA</td><td align="CENTER">gonzalo.garate@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7179</td><td align="CENTER">RUIZ</td><td align="CENTER">ANAIS</td><td align="CENTER">TESORERIA</td><td align="CENTER">anais.ruiz@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">SIN ANEXO</td><td align="CENTER">LOPEZ</td><td align="CENTER">CARLOS</td><td align="CENTER">TESORERIA</td><td align="CENTER">carlos.lopez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7273</td><td align="CENTER">PEREIRA</td><td align="CENTER">RUTH</td><td align="CENTER">TRANSITO</td><td align="CENTER">luis.vera@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7280</td><td align="CENTER">TRANSITO</td><td align="CENTER">EXAMENES</td><td align="CENTER">TRANSITO</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7259</td><td align="CENTER">RIVEROS</td><td align="CENTER">MARGARITA</td><td align="CENTER">TRANSITO</td><td align="CENTER">transito@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7260</td><td align="CENTER">CARMONA</td><td align="CENTER">ALEJANDRA</td><td align="CENTER">TRANSITO</td><td align="CENTER">alejandra.carmona@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7265</td><td align="CENTER">SALVATIERRA</td><td align="CENTER">PAULINA</td><td align="CENTER">TRANSITO</td><td align="CENTER">paulina.salvatierra@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7258</td><td align="CENTER">GREAU</td><td align="CENTER">RODRIGO</td><td align="CENTER">TRANSITO</td><td align="CENTER">rodrigo.greau@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7263</td><td align="CENTER">JARA</td><td align="CENTER">RAUL</td><td align="CENTER">TRANSITO</td><td align="CENTER">raul.jara@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7264</td><td align="CENTER">ZUÑIGA</td><td align="CENTER">PERLA</td><td align="CENTER">TRANSITO</td><td align="CENTER">perla.zuniga@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7278</td><td align="CENTER">JEREZ</td><td align="CENTER">DANIELA</td><td align="CENTER">TRANSITO</td><td align="CENTER">daniela.jerez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7257</td><td align="CENTER">PEREIRA</td><td align="CENTER">MARCELA</td><td align="CENTER">TRANSITO</td><td align="CENTER">marcela.pereira@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7266</td><td align="CENTER">FERNANDO</td><td align="CENTER">LEIVA</td><td align="CENTER">TRANSITO</td><td align="CENTER">fernando.leiva@munimelipilla</td></tr>
+<tr><td align="CENTER">7267</td><td align="CENTER">LOYOLA</td><td align="CENTER">KATHERINE</td><td align="CENTER">TRANSITO</td><td align="CENTER">katherine.loyola@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7268</td><td align="CENTER">CORNEJO</td><td align="CENTER">VERONICA</td><td align="CENTER">TRANSITO</td><td align="CENTER">veronica.cornejo@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7270</td><td align="CENTER">LICENCIAS</td><td align="CENTER">LICENCIAS</td><td align="CENTER">TRANSITO</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7271</td><td align="CENTER">ARMIJO</td><td align="CENTER">JUAN</td><td align="CENTER">TRANSITO</td><td align="CENTER">juan.armijo@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7272</td><td align="CENTER">VALENCIA</td><td align="CENTER">DOCTOR</td><td align="CENTER">TRANSITO</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7253</td><td align="CENTER">FLORES </td><td align="CENTER">ROSARIO</td><td align="CENTER">TRANSITO</td><td align="CENTER">rosario.flores@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7262</td><td align="CENTER">MENDOZA</td><td align="CENTER">RAFAEL</td><td align="CENTER">TRANSITO</td><td align="CENTER">rfmmyclpf@gmail.com</td></tr>
+<tr><td align="CENTER">7395</td><td align="CENTER">PEREIRA</td><td align="CENTER">ALEJANDRA</td><td align="CENTER">TRANSITO</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7296</td><td align="CENTER">BARRERA</td><td align="CENTER">VIVIANA</td><td align="CENTER">DIDECO (VIVIENDA)</td><td align="CENTER">viviana.barrera@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7305</td><td align="CENTER">FARIAS</td><td align="CENTER">DARLA</td><td align="CENTER">DIDECO</td><td align="CENTER">darla.farias@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">SIN ANEXO</td><td align="CENTER">LEDEZMA</td><td align="CENTER">JORGE</td><td align="CENTER">BODEGA DE EMERGENCIA</td><td align="CENTER">jorge.ledezma@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7355</td><td align="CENTER">NUÑEZ</td><td align="CENTER">VANIA</td><td align="CENTER">SECPLA</td><td align="CENTER">vania.nunez@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7207</td><td align="CENTER">GALARCE</td><td align="CENTER">ISABEL</td><td align="CENTER">SEGURIDAD HUMANA</td><td align="CENTER">isabel.galarce@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7228</td><td align="CENTER">BASCUÑAN</td><td align="CENTER">BASTIAN</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">bastian.bascunan@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7168</td><td align="CENTER">LEYTON</td><td align="CENTER">AMADA</td><td align="CENTER">DIDECO (DEPORTES)</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7170</td><td align="CENTER">MARTINEZ</td><td align="CENTER">ALBERTO</td><td align="CENTER">DIREC. DE OBRAS</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7170</td><td align="CENTER">BARRAZA</td><td align="CENTER">PAUL</td><td align="CENTER">DAF</td><td align="CENTER">Paul.barraza@munimelipilla.cl </td></tr>
+<tr><td align="CENTER">7256</td><td align="CENTER">GOMEZ</td><td align="CENTER">MARIA JOSE</td><td align="CENTER"></td><td align="CENTER">SIN CORREO</td></tr>
+<tr><td align="CENTER">7279</td><td align="CENTER">FACUSE</td><td align="CENTER">JORGE</td><td align="CENTER">BIBLIOTECA MUNICIPAL</td><td align="CENTER">biblioteca@munimelipilla.cl </td></tr>
+<tr><td align="CENTER">7279</td><td align="CENTER">FIGUEROA</td><td align="CENTER">ELBA</td><td align="CENTER">CDE (PROGRAMA FAMILIA)</td><td align="CENTER">elba.figueroa@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7317</td><td align="CENTER">PAL</td><td align="CENTER">ISMAEL</td><td align="CENTER">RECURSOS HUMANOS (REMUNERACIONES)</td><td align="CENTER">ismael.pal@munimelipilla.cl </td></tr>
+<tr><td align="CENTER">7341</td><td align="CENTER">HURTADO</td><td align="CENTER">HERNAN</td><td align="CENTER">SECPLA</td><td align="CENTER">hernan.hurtado@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7183</td><td align="CENTER">VILLAGRA</td><td align="CENTER">GUILLERMO</td><td align="CENTER">SEGURIDAD PUBLICA </td><td align="CENTER">guillermo.villagra@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7335</td><td align="CENTER">ALAMOS</td><td align="CENTER">SANDRA</td><td align="CENTER">JPL</td><td align="CENTER">sandra.alamos@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7334</td><td align="CENTER">OYANEDEL</td><td align="CENTER">DIEGO</td><td align="CENTER">SECPLA</td><td align="CENTER">diego.oyanedel@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7330</td><td align="CENTER">SOTO</td><td align="CENTER">CARLA</td><td align="CENTER">DGA</td><td align="CENTER">@</td></tr>
+<tr><td align="CENTER">7013</td><td align="CENTER">MUÑOZ</td><td align="CENTER">KARINA</td><td align="CENTER">ACTIVO FIJO</td><td align="CENTER">karina.munoz@munimelipilla.cl</td></tr>
+<tr><td align="CENTER">7360</td><td align="CENTER">CACERES</td><td align="CENTER">MATIAS</td><td align="CENTER">GABINETE</td><td align="CENTER">matias.caceres@munimelipilla.cl</td></tr>
+
+</tbody>
+</table></body></html>
