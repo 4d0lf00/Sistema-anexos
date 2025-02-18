@@ -1,8 +1,8 @@
 <?php
 
-$host = 'localhost';
-$port = 3307;
-$dbname = 'testing';
+$host = '172.16.0.26';
+$port = 2031;
+$dbname = 'anexos';
 $user = 'root';
 $password = '';
 

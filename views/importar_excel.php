@@ -35,14 +35,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['excel_file'])) {
         // Obtener todas las filas de la tabla
         $rows = $dom->getElementsByTagName('tr');
         
-        // Primero limpiamos la tabla
-        $db->query("TRUNCATE TABLE usuarios");
+        // Eliminamos el TRUNCATE ya que no queremos borrar la tabla
+        // $db->query("TRUNCATE TABLE usuarios");
         
-        // Preparamos la consulta SQL
-        $sql = "INSERT INTO usuarios (ANEXO, APELLIDO, NOMBRE, UBICACION, CORREO) VALUES (?, ?, ?, ?, ?)";
+        // Modificamos la consulta de inserción para usar ON DUPLICATE KEY UPDATE
+        $sql = "INSERT INTO usuarios (ANEXO, APELLIDO, NOMBRE, UBICACION, CORREO) 
+                VALUES (?, ?, ?, ?, ?)
+                ON DUPLICATE KEY UPDATE 
+                APELLIDO = VALUES(APELLIDO),
+                NOMBRE = VALUES(NOMBRE),
+                UBICACION = VALUES(UBICACION),
+                CORREO = VALUES(CORREO)";
         $stmt = $db->prepare($sql);
         
         $registrosImportados = 0;
+        $registrosExistentes = 0;
         
         // Empezamos desde 1 para saltar el encabezado
         for ($i = 1; $i < $rows->length; $i++) {
@@ -59,38 +66,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['excel_file'])) {
                 // Formatear campos para mantener consistencia con el diseño
                 $anexo = mb_strtoupper(trim($anexo));
                 if ($anexo === '') {
-                    $anexo = 'SIN ANEXO';
+                    continue; // Saltamos registros sin anexo
                 }
 
-                // Manejar casos especiales primero
-                if ($apellido === 'MARIA TERESA' && $nombre === 'ALVAREZ' ||
-                    $apellido === 'KIARA' && $nombre === 'JARAMILLO' ||
-                    $apellido === 'NATALIA' && $nombre === 'VELASQUEZ' ||
-                    $apellido === 'CAMILA' && $nombre === 'ALVARADO' ||
-                    $apellido === 'CAMILA' && $nombre === 'WIEGAND') {
-                    $temp = $apellido;
-                    $apellido = $nombre;
-                    $nombre = $temp;
-                }
+                // Normalizar caracteres especiales
+                $apellido = mb_convert_encoding(trim($apellido), 'UTF-8', 'UTF-8');
+                $nombre = mb_convert_encoding(trim($nombre), 'UTF-8', 'UTF-8');
+                $ubicacion = mb_convert_encoding(trim($ubicacion), 'UTF-8', 'UTF-8');
+                
+                // Convertir a mayúsculas después de normalizar
+                $apellido = mb_strtoupper($apellido);
+                $nombre = mb_strtoupper($nombre);
+                $ubicacion = mb_strtoupper($ubicacion);
 
-                // Manejar departamentos y casos especiales
-                $departamentos = [
-                    'ADQUISICIONES', 'BIBLIOTECA', 'CONTROL', 'CEMENTERIO', 
-                    'MUJERES', 'TERRITORIALES', 'CENTRA', 'DATACENTER', 
-                    'SOCIAL DE HOGARES', 'OPERADORAS', 'SEGURIDAD', 'GENERALES'
-                ];
-
-                if (in_array($apellido, $departamentos)) {
-                    if (empty($nombre) || in_array($nombre, ['MUNICIPAL', 'DPTO.', 'TELEFONICA', 'SECRETARIA', 'ARCHIVO', 'BODEGA', 'ADMINISTRACION'])) {
-                        $nombre = $apellido;
-                        $apellido = 'DEPARTAMENTO';
-                    }
-                }
-
-                // Formatear campos manteniendo mayúsculas
-                $apellido = mb_strtoupper(trim($apellido));
-                $nombre = mb_strtoupper(trim($nombre));
-                $ubicacion = mb_strtoupper(trim($ubicacion));
+                // Reemplazar específicamente SANTIBAÃEZ por SANTIBAÑEZ
+                $apellido = str_replace('SANTIBAÃEZ', 'SANTIBAÑEZ', $apellido);
 
                 // Limpiar correo
                 $correo = strtolower(trim($correo));
@@ -98,16 +88,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['excel_file'])) {
                     $correo = '@';
                 }
 
-                // Verificar si hay datos válidos antes de insertar
-                if (!empty($anexo) || !empty($apellido) || !empty($nombre)) {
-                    try {
-                        $stmt->execute([$anexo, $apellido, $nombre, $ubicacion, $correo]);
-                        $registrosImportados++;
-                    } catch (PDOException $e) {
-                        // Log del error si es necesario
-                        continue; // Continuar con el siguiente registro si hay error
-                    }
-                }
+                // Verificar si el registro ya existe en la base de datos
+                $stmt->execute([$anexo, $apellido, $nombre, $ubicacion, $correo]);
+                $registrosImportados++;
             }
         }
         
@@ -117,11 +100,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['excel_file'])) {
             $sqlUpdateCorreos = "UPDATE usuarios SET CORREO = '@' WHERE CORREO = '' OR CORREO IS NULL";
             $db->query($sqlUpdateCorreos);
             
-            $_SESSION['mensaje'] = "Importación exitosa. Se importaron $registrosImportados registros.";
+            $_SESSION['tipo_alerta'] = "success";
+            $_SESSION['mensaje_importacion'] = [
+                'titulo' => '¡Importación Completada!',
+                'nuevos' => $registrosImportados,
+                'existentes' => $registrosExistentes,
+                'total' => $registrosImportados + $registrosExistentes
+            ];
         }
         
     } catch (Exception $e) {
-        $_SESSION['error'] = "Error: " . $e->getMessage();
+        $_SESSION['tipo_alerta'] = "error";
+        $_SESSION['mensaje_importacion'] = [
+            'titulo' => 'Error en la importación',
+            'mensaje' => $e->getMessage()
+        ];
     }
     
     // Redirigir de vuelta al index
@@ -156,6 +149,32 @@ exit;
             background-color: #f8d7da;
             color: #721c24;
             border: 1px solid #f5c6cb;
+        }
+        .resultado-importacion {
+            background-color: #f8f9fa;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .resultado-importacion h4 {
+            color: #28a745;
+            margin: 0 0 10px 0;
+            font-size: 1.2em;
+        }
+        .resultado-importacion ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .resultado-importacion li {
+            padding: 5px 0;
+            color: #666;
+        }
+        .resultado-importacion strong {
+            color: #333;
+            font-weight: 600;
         }
     </style>
 </head>

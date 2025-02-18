@@ -69,6 +69,27 @@ $totalPaginas = ceil($totalUsuarios / $limit);
     <link rel="preload" href="./public/img/logo.png" as="image">
 </head>
 <body>
+    <?php if (isset($_SESSION['mensaje_importacion'])): ?>
+        <div class="alerta <?php echo $_SESSION['tipo_alerta']; ?>">
+            <div class="alert-content">
+                <div class="alert-icon"><?php echo $_SESSION['tipo_alerta'] === 'success' ? '✓' : '×'; ?></div>
+                <div class="alert-text">
+                    <h4><?php echo $_SESSION['mensaje_importacion']['titulo']; ?></h4>
+                    <?php if ($_SESSION['tipo_alerta'] === 'success'): ?>
+                        <p>Nuevos registros importados: <strong><?php echo $_SESSION['mensaje_importacion']['nuevos']; ?></strong></p>
+                        <p>Registros existentes omitidos: <strong><?php echo $_SESSION['mensaje_importacion']['existentes']; ?></strong></p>
+                        <p>Total procesados: <strong><?php echo $_SESSION['mensaje_importacion']['total']; ?></strong></p>
+                    <?php else: ?>
+                        <p><?php echo $_SESSION['mensaje_importacion']['mensaje']; ?></p>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+        <?php 
+        unset($_SESSION['mensaje_importacion']);
+        unset($_SESSION['tipo_alerta']);
+        ?>
+    <?php endif; ?>
     <div class="container">
         <div class="header">
             <div class="title">
@@ -103,7 +124,7 @@ $totalPaginas = ceil($totalUsuarios / $limit);
                 </a>
             </div>
         </div>
-
+        
         <table class="users-table">
             <thead>
                 <tr>

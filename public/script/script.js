@@ -17,6 +17,40 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Excel modal:', excelModal); // Debug
     console.log('Close button:', closeExcelBtn); // Debug
 
+    // Función para manejar los alerts
+    function handleAlert(alerta) {
+        if (!alerta.dataset.timeoutSet) {
+            alerta.dataset.timeoutSet = 'true';
+            setTimeout(() => {
+                alerta.classList.add('hiding');
+                setTimeout(() => {
+                    if (alerta && alerta.parentNode) {
+                        alerta.remove();
+                    }
+                }, 300);
+            }, 3000);
+        }
+    }
+
+    // Manejar alerts existentes
+    document.querySelectorAll('.alerta').forEach(handleAlert);
+
+    // Observador para nuevos alerts
+    const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            mutation.addedNodes.forEach((node) => {
+                if (node.classList && node.classList.contains('alerta')) {
+                    handleAlert(node);
+                }
+            });
+        });
+    });
+
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+
     // Inicializar datos
     function initializeData() {
         const rows = document.querySelectorAll('.users-table tbody tr');

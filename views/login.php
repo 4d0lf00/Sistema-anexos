@@ -22,12 +22,13 @@ if (!isset($_SESSION['csrf_token'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Inicio de sesion</title>
-    <link rel="stylesheet" href="/crud/public/css/login.css?v=1.0" media="all">
-    <link rel="stylesheet" href="/crud/public/css/spinner.css?v=1.0" media="all">
-    <link rel="preload" href="/crud/public/img/logo.png" as="image">
-    <link rel="preload" href="/crud/public/img/logo2.png" as="image">
-    <link rel="icon" type="image/png" href="/crud/public/img/logo.png">
+    <title>Inicio de sesión</title>
+    <!-- Rutas corregidas -->
+    <link rel="stylesheet" href="/Sistema-anexos/public/css/login.css?v=1.0" media="all">
+    <link rel="stylesheet" href="/Sistema-anexos/public/css/spinner.css?v=1.0" media="all">
+    <link rel="preload" href="/Sistema-anexos/public/img/logo.png" as="image">
+    <link rel="preload" href="/Sistema-anexos/public/img/logo2.png" as="image">
+    <link rel="icon" type="image/png" href="/Sistema-anexos/public/img/logo.png">
 </head>
 <body>
     <div class="spinner-container">
@@ -46,7 +47,7 @@ if (!isset($_SESSION['csrf_token'])) {
     </div>
     <div class="container">
         <div class="login-box">
-            <img src="/crud/public/img/logo2.png" alt="Logo" class="login-logo">
+            <img src="/Sistema-anexos/public/img/logo2.png" alt="Logo" class="login-logo">
             <p>Inicio sesion</p>
             <form id="loginForm" autocomplete="off">
                 <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
