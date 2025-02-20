@@ -25,8 +25,8 @@ try {
         throw new Exception('Método no permitido', 405);
     }
 
-    // Validar campos requeridos
-    $camposRequeridos = ['anexo', 'apellido', 'nombre', 'ubicacion', 'correo'];
+    // Validar campos requeridos (excepto correo)
+    $camposRequeridos = ['anexo', 'apellido', 'nombre', 'ubicacion'];
     foreach ($camposRequeridos as $campo) {
         if (empty($_POST[$campo])) {
             throw new Exception("El campo $campo es obligatorio", 400);
@@ -38,7 +38,7 @@ try {
     $apellido = trim($_POST['apellido']);
     $nombre = trim($_POST['nombre']);
     $ubicacion = trim($_POST['ubicacion']);
-    $correo = trim($_POST['correo']);
+    $correo = trim($_POST['correo'] ?? '@');  // Valor por defecto '@' si no se proporciona
 
     // Debug logging
     error_log("Datos recibidos:");
@@ -58,8 +58,9 @@ try {
     if (empty($ubicacion)) {
         throw new Exception('La ubicación no puede estar vacía', 400);
     }
-    if (empty($correo) || $correo === '@') {
-        throw new Exception('El correo no puede estar vacío o contener solo @', 400);
+    // Removemos la validación estricta del correo
+    if (empty($correo)) {
+        $correo = '@';  // Asignar '@' si está vacío
     }
 
     // Validar formato numérico del anexo
@@ -90,13 +91,13 @@ try {
         $stmt = $db->prepare("
             INSERT INTO usuarios 
             (ANEXO, APELLIDO, NOMBRE, UBICACION, CORREO)
-            VALUES (?, ?, ?, ?, NULLIF(?,''))
+            VALUES (?, ?, ?, ?, ?)
         ");
     } else {
         // Actualizar usuario existente
         $stmt = $db->prepare("
             UPDATE usuarios 
-            SET APELLIDO = ?, NOMBRE = ?, UBICACION = ?, CORREO = NULLIF(?,'')
+            SET APELLIDO = ?, NOMBRE = ?, UBICACION = ?, CORREO = ?
             WHERE ANEXO = ?
         ");
     }

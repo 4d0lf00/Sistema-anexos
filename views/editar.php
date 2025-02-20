@@ -19,7 +19,7 @@ try {
     // Verificar si el usuario existe
     $checkStmt = $db->prepare("SELECT * FROM usuarios WHERE ANEXO = ?");
     $checkStmt->execute([$id]);
-    $usuario = $checkStmt->fetch();
+    $usuario = $checkStmt->fetch(PDO::FETCH_ASSOC);
     
     if (!$usuario) {
         throw new Exception('Usuario no encontrado');
@@ -30,24 +30,29 @@ try {
     $params = [];
 
     // Solo incluir los campos que se enviaron en la solicitud
-    if (isset($_POST['apellido'])) {
+    if (isset($_POST['apellido']) && $_POST['apellido'] !== '') {
         $updateFields[] = "APELLIDO = :apellido";
         $params[':apellido'] = $_POST['apellido'];
     }
-    if (isset($_POST['nombre'])) {
+
+    if (isset($_POST['nombre']) && $_POST['nombre'] !== '') {
         $updateFields[] = "NOMBRE = :nombre";
         $params[':nombre'] = $_POST['nombre'];
     }
-    if (isset($_POST['ubicacion'])) {
+
+    if (isset($_POST['ubicacion']) && $_POST['ubicacion'] !== '') {
         $updateFields[] = "UBICACION = :ubicacion";
         $params[':ubicacion'] = $_POST['ubicacion'];
     }
+
+    // Para el correo, mantener el valor existente si no se modifica
     if (isset($_POST['correo'])) {
         $updateFields[] = "CORREO = :correo";
-        $params[':correo'] = $_POST['correo'];
+        // Si el correo está vacío o es solo @, mantener el valor actual
+        $params[':correo'] = (empty($_POST['correo']) || $_POST['correo'] === '@') ? $usuario['CORREO'] : $_POST['correo'];
     }
-    if (isset($_POST['anexo']) && $_POST['anexo'] !== $id) {
-        // Verificar que el nuevo anexo no exista
+
+    if (isset($_POST['anexo']) && $_POST['anexo'] !== $id && $_POST['anexo'] !== '') {
         $checkAnexo = $db->prepare("SELECT COUNT(*) FROM usuarios WHERE ANEXO = ? AND ANEXO != ?");
         $checkAnexo->execute([$_POST['anexo'], $id]);
         if ($checkAnexo->fetchColumn() > 0) {
@@ -57,17 +62,15 @@ try {
         $params[':anexo'] = $_POST['anexo'];
     }
 
-    // Si no hay campos para actualizar
     if (empty($updateFields)) {
         echo json_encode([
             'success' => true,
             'message' => 'No hay cambios para actualizar',
-            'user' => $usuario
+            'data' => $usuario
         ]);
         exit;
     }
 
-    // Construir y ejecutar la consulta SQL
     $sql = "UPDATE usuarios SET " . implode(", ", $updateFields) . " WHERE ANEXO = :id";
     $params[':id'] = $id;
 
@@ -76,14 +79,18 @@ try {
     if ($stmt->execute($params)) {
         // Obtener los datos actualizados
         $stmtSelect = $db->prepare("SELECT * FROM usuarios WHERE ANEXO = ?");
-        $stmtSelect->execute([$id]);
-        $updatedUser = $stmtSelect->fetch();
+        $stmtSelect->execute([isset($_POST['anexo']) && $_POST['anexo'] !== '' ? $_POST['anexo'] : $id]);
+        $updatedUser = $stmtSelect->fetch(PDO::FETCH_ASSOC);
 
-        echo json_encode([
-            'success' => true,
-            'message' => 'Usuario actualizado correctamente',
-            'user' => $updatedUser
-        ]);
+        if ($updatedUser) {
+            echo json_encode([
+                'success' => true,
+                'message' => 'Usuario actualizado correctamente',
+                'data' => $updatedUser
+            ]);
+        } else {
+            throw new Exception('Error al obtener los datos actualizados');
+        }
     } else {
         throw new Exception('Error al actualizar el usuario');
     }

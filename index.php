@@ -164,7 +164,7 @@ header("Expires: 0");
                 </div>
                 <div class="form-group">
                     <label for="correo">Correo</label>
-                    <input type="email" id="correo" name="correo" required>
+                    <input type="text" id="correo" name="correo">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="cancel-btn">Cancelar</button>

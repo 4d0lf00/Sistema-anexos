@@ -64,7 +64,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    addUserBtn.addEventListener('click', () => openModal('create'));
+    addUserBtn.addEventListener('click', () => {
+        openModal('create');
+    });
     closeBtn.addEventListener('click', closeModal);
     cancelBtn.addEventListener('click', closeModal);
     modal.addEventListener('click', (e) => {
@@ -76,18 +78,24 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.overflow = 'hidden';
         form.reset();
         
+        // Configurar el campo de correo
+        const emailInput = document.getElementById('correo');
+        emailInput.setAttribute('type', 'text');
+        emailInput.removeAttribute('pattern');
+        emailInput.removeAttribute('required');
+        
         if (type === 'create') {
             document.querySelector('.modal-header h2').textContent = 'Agregar Usuario';
             document.getElementById('action').value = 'create';
             document.getElementById('userId').value = '';
             enableAllFields(true);
+            
+            // Configurar los campos requeridos
             const inputs = form.querySelectorAll('input');
             inputs.forEach(input => {
-                if (input.id !== 'anexo') {
+                if (input.id === 'anexo' || input.id === 'apellido' || 
+                    input.id === 'nombre' || input.id === 'ubicacion') {
                     input.setAttribute('required', 'required');
-                }
-                if (input.id === 'correo') {
-                    input.setAttribute('type', 'email');
                 }
             });
         } else {
@@ -195,33 +203,34 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 form.reset();
                 
+                // Remover todos los required y cambiar tipo de correo
                 const inputs = form.querySelectorAll('input');
                 inputs.forEach(input => {
                     input.removeAttribute('required');
                     if (input.id === 'correo') {
                         input.setAttribute('type', 'text');
+                        input.removeAttribute('pattern');
                     }
                 });
                 
                 document.getElementById('action').value = 'update';
                 
+                // Guardar los valores originales
                 const anexoInput = document.getElementById('anexo');
                 anexoInput.value = row.cells[0].textContent.trim();
                 anexoInput.dataset.original = row.cells[0].textContent.trim();
                 
                 document.getElementById('apellido').value = row.cells[1].textContent.trim();
-                document.getElementById('nombre').value = row.cells[2].textContent.trim();
-                document.getElementById('ubicacion').value = row.cells[3].textContent.trim();
-                document.getElementById('correo').value = row.cells[4].textContent.trim();
+                document.getElementById('apellido').dataset.original = row.cells[1].textContent.trim();
                 
-                const formInputs = form.querySelectorAll('input:not([type="hidden"])');
-                formInputs.forEach(input => {
-                    input.dataset.original = input.value;
-                    input.addEventListener('input', function() {
-                        const hasChanged = this.value !== this.dataset.original;
-                        this.classList.toggle('modified', hasChanged);
-                    });
-                });
+                document.getElementById('nombre').value = row.cells[2].textContent.trim();
+                document.getElementById('nombre').dataset.original = row.cells[2].textContent.trim();
+                
+                document.getElementById('ubicacion').value = row.cells[3].textContent.trim();
+                document.getElementById('ubicacion').dataset.original = row.cells[3].textContent.trim();
+                
+                document.getElementById('correo').value = row.cells[4].textContent.trim();
+                document.getElementById('correo').dataset.original = row.cells[4].textContent.trim();
 
                 modal.classList.add('show');
                 document.body.style.overflow = 'hidden';
@@ -302,19 +311,61 @@ document.addEventListener('DOMContentLoaded', function() {
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
-        const formData = new FormData(e.target);
+        const formData = new FormData();
+        
+        // Solo enviar los campos que han sido modificados
+        const inputs = form.querySelectorAll('input:not([type="hidden"])');
+        let hasChanges = false;
+        
+        inputs.forEach(input => {
+            // Para creación nueva, enviar todos los campos
+            if (document.getElementById('action').value === 'create') {
+                formData.append(input.id, input.value);
+                hasChanges = true;
+            } else if (input.value !== input.dataset.original) {
+                // Para edición, solo enviar campos modificados
+                formData.append(input.id, input.value);
+                hasChanges = true;
+            }
+        });
+        
+        // Si no hay cambios en modo edición, mostrar mensaje y cerrar modal
+        if (!hasChanges) {
+            showNotification('No se han realizado cambios');
+            closeModal();
+            return;
+        }
+        
+        // Agregar campos necesarios
+        const action = document.getElementById('action').value;
+        formData.append('action', action);
+        
+        if (action === 'update') {
+            formData.append('id', document.getElementById('anexo').dataset.original);
+        }
         
         try {
-            const response = await fetch('views/procesar_crear.php', {
+            const url = action === 'create' ? 'views/procesar_crear.php' : 'views/editar.php';
+            const response = await fetch(url, {
                 method: 'POST',
                 body: formData
             });
+
+            let result;
+            try {
+                result = await response.json();
+            } catch (e) {
+                // Si no podemos parsear el JSON, simplemente cerramos el modal y actualizamos la tabla
+                if (action === 'create') {
+                    closeModal();
+                    window.location.reload(); // Recargar la página para ver el nuevo usuario
+                    return;
+                }
+                throw new Error('Error al procesar la respuesta del servidor');
+            }
             
-            const result = await response.json();
-            
-            if (response.status === 409) {
-                showNotification(result.message, true);
-                return;
+            if (!response.ok) {
+                throw new Error(result.message || 'Error al procesar la solicitud');
             }
             
             if (result.success) {
@@ -326,29 +377,30 @@ document.addEventListener('DOMContentLoaded', function() {
                     CORREO: result.data.CORREO
                 };
 
-                if (formData.get('action') === 'create') {
+                if (action === 'create') {
                     allUsers.push(nuevoUsuario);
                 } else {
-                    const index = allUsers.findIndex(u => u.ANEXO === nuevoUsuario.ANEXO);
+                    const index = allUsers.findIndex(u => u.ANEXO === document.getElementById('anexo').dataset.original);
                     if (index !== -1) {
                         allUsers[index] = nuevoUsuario;
                     }
                 }
 
-                allUsers.sort((a, b) => {
-                    const anexoA = parseInt(a.ANEXO) || 0;
-                    const anexoB = parseInt(b.ANEXO) || 0;
-                    return anexoA - anexoB;
-                });
-
                 filterAndDisplayUsers(searchInput.value.trim());
-                showNotification(result.message);
+                showNotification(action === 'create' ? 'Usuario creado correctamente' : 'Usuario actualizado correctamente');
                 closeModal();
             } else {
-                showNotification(result.message, true);
+                throw new Error(result.message || 'Error al procesar la solicitud');
             }
         } catch (error) {
-            showNotification('Error al procesar la solicitud', true);
+            console.error('Error:', error);
+            // Si es una creación, simplemente cerramos y recargamos
+            if (action === 'create') {
+                closeModal();
+                window.location.reload();
+                return;
+            }
+            showNotification(error.message || 'Error al procesar la solicitud', true);
         }
     });
     
