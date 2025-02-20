@@ -8,16 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
     let userIdToDelete = null;
     let allUsers = [];
 
-    // Agregar estas variables al inicio junto con las otras declaraciones
     const excelBtn = document.getElementById('excelBtn');
     const excelModal = document.getElementById('excelModal');
     const closeExcelBtn = document.getElementById('closeExcelModal');
 
-    console.log('Excel button:', excelBtn); // Debug
-    console.log('Excel modal:', excelModal); // Debug
-    console.log('Close button:', closeExcelBtn); // Debug
-
-    // Función para manejar los alerts
     function handleAlert(alerta) {
         if (!alerta.dataset.timeoutSet) {
             alerta.dataset.timeoutSet = 'true';
@@ -32,10 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Manejar alerts existentes
     document.querySelectorAll('.alerta').forEach(handleAlert);
 
-    // Observador para nuevos alerts
     const observer = new MutationObserver((mutations) => {
         mutations.forEach((mutation) => {
             mutation.addedNodes.forEach((node) => {
@@ -51,18 +43,20 @@ document.addEventListener('DOMContentLoaded', function() {
         subtree: true
     });
 
-    // Inicializar datos
     function initializeData() {
-        const rows = document.querySelectorAll('.users-table tbody tr');
-        allUsers = Array.from(rows).map(row => ({
-            ANEXO: row.cells[0].textContent.trim(),
-            APELLIDO: row.cells[1].textContent.trim(),
-            NOMBRE: row.cells[2].textContent.trim(),
-            UBICACION: row.cells[3].textContent.trim(),
-            CORREO: row.cells[4].textContent.trim()
-        }));
+        if (Array.isArray(window.allUsers)) {
+            allUsers = window.allUsers;
+        } else {
+            const rows = document.querySelectorAll('.users-table tbody tr');
+            allUsers = Array.from(rows).map(row => ({
+                ANEXO: row.cells[0].textContent.trim(),
+                APELLIDO: row.cells[1].textContent.trim(),
+                NOMBRE: row.cells[2].textContent.trim(),
+                UBICACION: row.cells[3].textContent.trim(),
+                CORREO: row.cells[4].textContent.trim()
+            }));
+        }
 
-        // Ordenar usuarios por número de anexo
         allUsers.sort((a, b) => {
             const anexoA = parseInt(a.ANEXO) || 0;
             const anexoB = parseInt(b.ANEXO) || 0;
@@ -70,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Event listeners para los modales y botones
     addUserBtn.addEventListener('click', () => openModal('create'));
     closeBtn.addEventListener('click', closeModal);
     cancelBtn.addEventListener('click', closeModal);
@@ -88,7 +81,6 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('action').value = 'create';
             document.getElementById('userId').value = '';
             enableAllFields(true);
-            // Restaurar required en los campos para crear
             const inputs = form.querySelectorAll('input');
             inputs.forEach(input => {
                 if (input.id !== 'anexo') {
@@ -111,7 +103,22 @@ document.addEventListener('DOMContentLoaded', function() {
         form.reset();
     }
 
-    // Función para filtrar y mostrar usuarios
+    function mostrarError(mensaje) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: mensaje
+        });
+    }
+    
+    function mostrarExito(mensaje) {
+        Swal.fire({
+            icon: 'success',
+            title: 'Éxito',
+            text: mensaje
+        });
+    }
+
     function filterAndDisplayUsers(searchTerm = '') {
         const tbody = document.querySelector('.users-table tbody');
         const filteredUsers = allUsers.filter(user => {
@@ -127,7 +134,6 @@ document.addEventListener('DOMContentLoaded', function() {
             );
         });
 
-        // Limpiar tabla
         tbody.innerHTML = '';
 
         if (filteredUsers.length === 0) {
@@ -159,7 +165,6 @@ document.addEventListener('DOMContentLoaded', function() {
         initializeButtonListeners();
     }
 
-    // Event listeners para la búsqueda
     const searchInput = document.getElementById('searchInput');
     const clearSearchBtn = document.getElementById('clearSearch');
 
@@ -181,19 +186,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Inicializar event listeners de botones
     function initializeButtonListeners() {
-        // Botones de editar
         document.querySelectorAll('.edit-btn').forEach(button => {
             button.addEventListener('click', function(e) {
                 e.preventDefault();
                 const userId = this.getAttribute('data-id');
                 const row = this.closest('tr');
                 
-                // Limpiar el formulario
                 form.reset();
                 
-                // Remover required y cambiar tipo de email
                 const inputs = form.querySelectorAll('input');
                 inputs.forEach(input => {
                     input.removeAttribute('required');
@@ -202,10 +203,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 });
                 
-                // Establecer el modo de edición
                 document.getElementById('action').value = 'update';
                 
-                // Llenar los campos con los valores actuales
                 const anexoInput = document.getElementById('anexo');
                 anexoInput.value = row.cells[0].textContent.trim();
                 anexoInput.dataset.original = row.cells[0].textContent.trim();
@@ -215,7 +214,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('ubicacion').value = row.cells[3].textContent.trim();
                 document.getElementById('correo').value = row.cells[4].textContent.trim();
                 
-                // Configurar detectores de cambios
                 const formInputs = form.querySelectorAll('input:not([type="hidden"])');
                 formInputs.forEach(input => {
                     input.dataset.original = input.value;
@@ -230,7 +228,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 
-        // Botones de eliminar
         document.querySelectorAll('.delete-btn').forEach(button => {
             button.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -240,7 +237,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Modal de eliminación
     function openDeleteModal() {
         deleteModal.classList.add('show');
         document.body.style.overflow = 'hidden';
@@ -274,133 +270,88 @@ document.addEventListener('DOMContentLoaded', function() {
                     row.remove();
                     allUsers = allUsers.filter(user => user.ANEXO !== userIdToDelete);
                     closeDeleteModal();
+                    showNotification('Usuario eliminado correctamente');
                 }
             })
             .catch(error => {
                 console.error('Error:', error);
+                showNotification('Error al eliminar el usuario', true);
             });
         }
     });
 
-    // Manejar el formulario
-    form.addEventListener('submit', function(e) {
+    function showNotification(message, isError = false) {
+        const existingNotification = document.querySelector('.notification');
+        if (existingNotification) {
+            existingNotification.remove();
+        }
+
+        const notification = document.createElement('div');
+        notification.className = `notification${isError ? ' error' : ''}`;
+        notification.textContent = message;
+
+        document.body.appendChild(notification);
+
+        setTimeout(() => notification.classList.add('show'), 10);
+
+        setTimeout(() => {
+            notification.classList.remove('show');
+            setTimeout(() => notification.remove(), 300);
+        }, 3000);
+    }
+
+    form.addEventListener('submit', async (e) => {
         e.preventDefault();
-        const action = document.getElementById('action').value;
+        const formData = new FormData(e.target);
         
-        const newFormData = new FormData();
-        newFormData.append('action', action);
-        
-        const anexoOriginal = document.getElementById('anexo').dataset.original;
-        
-        if (action === 'update') {
-            if (!anexoOriginal) {
-                return;
-            }
-            newFormData.append('id', anexoOriginal);
-
-            const fields = ['apellido', 'nombre', 'ubicacion', 'correo', 'anexo'];
-            let hasChanges = false;
-
-            fields.forEach(field => {
-                const input = document.getElementById(field);
-                if (input && input.classList.contains('modified')) {
-                    if (field === 'correo' && input.value && !isValidEmail(input.value)) {
-                        return;
-                    }
-                    newFormData.append(field, input.value);
-                    hasChanges = true;
-                }
+        try {
+            const response = await fetch('views/procesar_crear.php', {
+                method: 'POST',
+                body: formData
             });
-
-            if (!hasChanges) {
-                return;
-            }
-        } else {
-            const fields = ['anexo', 'apellido', 'nombre', 'ubicacion', 'correo'];
-            const requiredFields = ['anexo', 'apellido', 'nombre'];
             
-            let missingFields = false;
-            fields.forEach(field => {
-                const input = document.getElementById(field);
-                if (input) {
-                    if (requiredFields.includes(field) && !input.value) {
-                        missingFields = true;
-                    }
-                    newFormData.append(field, input.value);
-                }
-            });
-
-            if (missingFields) {
+            const result = await response.json();
+            
+            if (response.status === 409) {
+                showNotification(result.message, true);
                 return;
             }
-        }
+            
+            if (result.success) {
+                const nuevoUsuario = {
+                    ANEXO: result.data.ANEXO,
+                    APELLIDO: result.data.APELLIDO,
+                    NOMBRE: result.data.NOMBRE,
+                    UBICACION: result.data.UBICACION,
+                    CORREO: result.data.CORREO
+                };
 
-        const url = action === 'create' ? 'views/procesar_crear.php' : 'views/editar.php';
-
-        fetch(url, {
-            method: 'POST',
-            body: newFormData
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                if (action === 'update') {
-                    const row = document.querySelector(`button[data-id="${anexoOriginal}"]`).closest('tr');
-                    if (!row) {
-                        return;
-                    }
-                    const updatedUser = data.user;
-                    
-                    const newRow = document.createElement('tr');
-                    newRow.innerHTML = `
-                        <td>${updatedUser.ANEXO}</td>
-                        <td>${updatedUser.APELLIDO}</td>
-                        <td>${updatedUser.NOMBRE}</td>
-                        <td>${updatedUser.UBICACION}</td>
-                        <td>${updatedUser.CORREO}</td>
-                        <td class="actions">
-                            <button class="edit-btn" data-id="${updatedUser.ANEXO}">✏️</button>
-                            <button class="delete-btn" data-id="${updatedUser.ANEXO}">🗑️</button>
-                        </td>
-                    `;
-
-                    row.parentNode.replaceChild(newRow, row);
-
-                    const index = allUsers.findIndex(u => u.ANEXO === anexoOriginal);
-                    if (index !== -1) {
-                        allUsers[index] = updatedUser;
-                    }
-
-                    if (updatedUser.ANEXO !== anexoOriginal) {
-                        allUsers.sort((a, b) => {
-                            const anexoA = parseInt(a.ANEXO) || 0;
-                            const anexoB = parseInt(b.ANEXO) || 0;
-                            return anexoA - anexoB;
-                        });
-                        filterAndDisplayUsers(document.getElementById('searchInput').value.trim());
-                    }
-
-                    initializeButtonListeners();
+                if (formData.get('action') === 'create') {
+                    allUsers.push(nuevoUsuario);
                 } else {
-                    allUsers.push(data.user);
-                    allUsers.sort((a, b) => {
-                        const anexoA = parseInt(a.ANEXO) || 0;
-                        const anexoB = parseInt(b.ANEXO) || 0;
-                        return anexoA - anexoB;
-                    });
-                    filterAndDisplayUsers(document.getElementById('searchInput').value.trim());
-                    initializeButtonListeners();
+                    const index = allUsers.findIndex(u => u.ANEXO === nuevoUsuario.ANEXO);
+                    if (index !== -1) {
+                        allUsers[index] = nuevoUsuario;
+                    }
                 }
-                
-                closeModal();
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-    });
 
-    // Agregar función para habilitar/deshabilitar campos
+                allUsers.sort((a, b) => {
+                    const anexoA = parseInt(a.ANEXO) || 0;
+                    const anexoB = parseInt(b.ANEXO) || 0;
+                    return anexoA - anexoB;
+                });
+
+                filterAndDisplayUsers(searchInput.value.trim());
+                showNotification(result.message);
+                closeModal();
+            } else {
+                showNotification(result.message, true);
+            }
+        } catch (error) {
+            showNotification('Error al procesar la solicitud', true);
+        }
+    });
+    
     function enableAllFields(enable) {
         const fields = ['anexo', 'apellido', 'nombre', 'ubicacion', 'correo'];
         fields.forEach(field => {
@@ -409,23 +360,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Función auxiliar para validar email
     function isValidEmail(email) {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(email);
     }
 
-    // Inicializar la aplicación
     initializeData();
     initializeButtonListeners();
     filterAndDisplayUsers();
 
-    // Agregar los event listeners para el modal de Excel
     if (excelBtn && excelModal) {
-        console.log('Excel button and modal found'); // Para debugging
-
         excelBtn.addEventListener('click', function(e) {
-            console.log('Excel button clicked'); // Debug
             e.preventDefault();
             excelModal.classList.add('show');
             document.body.style.overflow = 'hidden';
@@ -433,7 +378,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (closeExcelBtn) {
             closeExcelBtn.addEventListener('click', function() {
-                console.log('Close button clicked'); // Debug
                 excelModal.classList.remove('show');
                 document.body.style.overflow = '';
             });
@@ -446,15 +390,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // Prevenir que los clics dentro del contenido cierren el modal
         const modalContent = excelModal.querySelector('.modal-content');
         if (modalContent) {
             modalContent.addEventListener('click', function(e) {
                 e.stopPropagation();
             });
         }
-    } else {
-        console.log('Excel button or modal not found'); // Debug
     }
 });
-

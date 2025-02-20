@@ -25,37 +25,16 @@ $_SESSION['last_activity'] = time();
 
 $db = require_once 'config/db.php';
 
-// Modificamos la consulta para usar paginación
-$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
-// $limit = 50; // usuarios por página
-$limit = -1; // Mostrar todos los usuarios
-$offset = ($page - 1) * $limit; // Esto ya no es necesario si limit es -1
-
-// Cambia la consulta SQL para manejar el caso de límite -1
-if ($limit === -1) {
-    $sql = "SELECT * FROM usuarios ORDER BY CAST(ANEXO AS UNSIGNED)";
-} else {
-    $sql = "SELECT * FROM usuarios ORDER BY CAST(ANEXO AS UNSIGNED) LIMIT ? OFFSET ?";
-}
-
+// Consulta simple
+$sql = "SELECT * FROM usuarios ORDER BY CAST(ANEXO AS UNSIGNED)";
 $stmt = $db->prepare($sql);
+$stmt->execute();
+$usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-// Cambia el bindValue para el offset si limit es -1
-if ($limit === -1) {
-    // No se necesita vincular parámetros
-    $stmt->execute();
-} else {
-    $stmt->bindValue(1, $limit, PDO::PARAM_INT);
-    $stmt->bindValue(2, $offset, PDO::PARAM_INT);
-    $stmt->execute();
-}
-$usuarios = $stmt->fetchAll();
-
-// Obtener el total de usuarios para la paginación
-$sqlCount = "SELECT COUNT(*) FROM usuarios";
-$totalUsuarios = $db->query($sqlCount)->fetchColumn();
-$totalPaginas = ceil($totalUsuarios / $limit);
-
+// Headers de caché
+header("Cache-Control: no-cache, no-store, must-revalidate");
+header("Pragma: no-cache");
+header("Expires: 0");
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -67,6 +46,7 @@ $totalPaginas = ceil($totalUsuarios / $limit);
     <link rel="stylesheet" href="public/css/style.css?v=1.0" media="all">
     <script src="public/script/script.js?v=1.0" defer></script>
     <link rel="preload" href="./public/img/logo.png" as="image">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <?php if (isset($_SESSION['mensaje_importacion'])): ?>
@@ -244,11 +224,50 @@ $totalPaginas = ceil($totalUsuarios / $limit);
         </div>
     </div>
 
+    <!-- Debug - Ver estructura de datos -->
+    <div style="display:none">
+    <?php
+        echo "Tipo de \$usuarios: " . gettype($usuarios) . "<br>";
+        echo "Contenido de \$usuarios:<br>";
+        print_r($usuarios);
+        
+        // Ver la consulta SQL que se está ejecutando
+        echo "<br>SQL ejecutado: " . $sql . "<br>";
+        
+        // Ver si hay errores en la consulta
+        if ($stmt->errorInfo()[0] !== '00000') {
+            echo "Error en la consulta: ";
+            print_r($stmt->errorInfo());
+        }
+    ?>
+    </div>
+
+    <!-- Debug info -->
+    <pre style="display: none">
+    <?php
+        echo "Tipo de datos de \$usuarios: " . gettype($usuarios) . "\n";
+        echo "Número de registros: " . count($usuarios) . "\n";
+        echo "Primera fila:\n";
+        if (!empty($usuarios)) {
+            print_r(reset($usuarios));
+        }
+        echo "\nConsulta SQL:\n" . $sql . "\n";
+        
+        // Ver si hay errores en la consulta
+        echo "\nEstado de la consulta:\n";
+        print_r($stmt->errorInfo());
+        
+        // Ver el JSON generado
+        echo "\nJSON generado:\n";
+        echo htmlspecialchars($usuariosJSON);
+    ?>
+    </pre>
+
     <!-- Los scripts van al final -->
     <script>
-        // Pasar todos los usuarios a JavaScript
-        window.todosUsuarios = <?php echo json_encode($usuarios); ?>;
+        // Inicializar datos
+        window.allUsers = <?php echo json_encode(array_values($usuarios)); ?>;
     </script>
     <script src="public/script/script.js"></script>
 </body>
-</html> 
+</html>

@@ -1,109 +1,147 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-// Asignar el resultado del require a la variable $db
-$db = require_once __DIR__ . '/../config/db.php';
-
-if (!$db) {
-    error_log("Error: No se pudo conectar a la base de datos");
-    http_response_code(500);
-    echo json_encode([
-        'success' => false,
-        'message' => 'Error de conexión a la base de datos'
-    ]);
-    exit;
-}
-
-if ($db) {
-    error_log("Conexión a la base de datos establecida correctamente");
-} else {
-    error_log("Error: No se pudo establecer la conexión a la base de datos");
-}
-
+// Limpiar buffers y headers
+while (ob_get_level()) ob_end_clean();
+ob_start();
 header('Content-Type: application/json');
 
+// Habilitar logging detallado al inicio del archivo
+error_log("Inicio de procesar_crear.php");
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+// Iniciar sesión y verificar autenticación
+session_start();
+if (!isset($_SESSION['usuario'])) {
+    http_response_code(401);
+    die(json_encode(['success' => false, 'message' => 'Acceso no autorizado']));
+}
+
+// Conexión a base de datos
+require __DIR__ . '/../config/db.php';
+
 try {
+    // Validar método HTTP
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-        throw new Exception('Método no permitido');
+        throw new Exception('Método no permitido', 405);
     }
 
-    // Debug: Ver los datos que llegan
-    error_log("POST data: " . print_r($_POST, true));
-
-    // Validar que todos los campos requeridos estén presentes
-    $requiredFields = ['anexo', 'apellido', 'nombre', 'ubicacion', 'correo'];
-    foreach ($requiredFields as $field) {
-        if (!isset($_POST[$field]) || empty($_POST[$field])) {
-            throw new Exception("El campo {$field} es requerido");
+    // Validar campos requeridos
+    $camposRequeridos = ['anexo', 'apellido', 'nombre', 'ubicacion', 'correo'];
+    foreach ($camposRequeridos as $campo) {
+        if (empty($_POST[$campo])) {
+            throw new Exception("El campo $campo es obligatorio", 400);
         }
     }
 
-    // Obtener los datos del formulario
+    // Sanitizar datos
     $anexo = trim($_POST['anexo']);
     $apellido = trim($_POST['apellido']);
     $nombre = trim($_POST['nombre']);
     $ubicacion = trim($_POST['ubicacion']);
     $correo = trim($_POST['correo']);
 
-    // Debug: Ver los datos procesados
-    error_log("Datos procesados: anexo=$anexo, apellido=$apellido, nombre=$nombre, ubicacion=$ubicacion, correo=$correo");
+    // Debug logging
+    error_log("Datos recibidos:");
+    error_log("Anexo: " . $anexo);
+    error_log("Apellido: " . $apellido);
+    error_log("Nombre: " . $nombre);
+    error_log("Ubicación: " . $ubicacion);
+    error_log("Correo: " . $correo);
 
-    // Verificar si el anexo ya existe
-    $checkSql = "SELECT COUNT(*) FROM usuarios WHERE ANEXO = :anexo";
-    $checkStmt = $db->prepare($checkSql);
-    $checkStmt->bindValue(':anexo', $anexo, PDO::PARAM_STR);
-    $checkStmt->execute();
-    
-    if ($checkStmt->fetchColumn() > 0) {
-        throw new Exception('El anexo ya existe');
+    // Validación adicional para campos vacíos después del trim
+    if (empty($apellido)) {
+        throw new Exception('El apellido no puede estar vacío', 400);
+    }
+    if (empty($nombre)) {
+        throw new Exception('El nombre no puede estar vacío', 400);
+    }
+    if (empty($ubicacion)) {
+        throw new Exception('La ubicación no puede estar vacía', 400);
+    }
+    if (empty($correo) || $correo === '@') {
+        throw new Exception('El correo no puede estar vacío o contener solo @', 400);
     }
 
-    // Preparar la consulta de inserción
-    $sql = "INSERT INTO usuarios (ANEXO, APELLIDO, NOMBRE, UBICACION, CORREO) 
-            VALUES (:anexo, :apellido, :nombre, :ubicacion, :correo)";
-    
-    $stmt = $db->prepare($sql);
-    
-    // Debug: Ver la consulta SQL con los valores
-    $params = [
-        ':anexo' => $anexo,
-        ':apellido' => $apellido,
-        ':nombre' => $nombre,
-        ':ubicacion' => $ubicacion,
-        ':correo' => $correo
-    ];
-    error_log("SQL: $sql");
-    error_log("Params: " . print_r($params, true));
+    // Validar formato numérico del anexo
+    if (!preg_match('/^\d+$/', $anexo)) {
+        throw new Exception('El anexo debe contener solo números', 400);
+    }
+    if ((int)$anexo <= 0) {
+        throw new Exception('El anexo debe ser un número positivo', 400);
+    }
+    // Agregar logging para debug
+    error_log("Intentando crear anexo: " . $anexo);
 
-    $stmt->bindValue(':anexo', $anexo, PDO::PARAM_STR);
-    $stmt->bindValue(':apellido', $apellido, PDO::PARAM_STR);
-    $stmt->bindValue(':nombre', $nombre, PDO::PARAM_STR);
-    $stmt->bindValue(':ubicacion', $ubicacion, PDO::PARAM_STR);
-    $stmt->bindValue(':correo', $correo, PDO::PARAM_STR);
+    $db->beginTransaction(); 
 
-    if ($stmt->execute()) {
-        echo json_encode([
-            'success' => true,
-            'message' => 'Usuario creado correctamente',
-            'user' => [
-                'ANEXO' => $anexo,
-                'APELLIDO' => $apellido,
-                'NOMBRE' => $nombre,
-                'UBICACION' => $ubicacion,
-                'CORREO' => $correo
-            ]
-        ]);
+    // Verificar si es una actualización o creación
+    $action = $_POST['action'] ?? 'create';
+
+    if ($action === 'create') {
+        // Verificación de duplicados solo para nuevos registros
+        $stmt = $db->prepare("SELECT 1 FROM usuarios WHERE ANEXO = ? LIMIT 1");
+        $stmt->execute([$anexo]);
+        if ($stmt->fetchColumn()) {
+            $db->rollBack();
+            throw new Exception('El número de anexo ya existe', 409);
+        }
+
+        // Insertar nuevo usuario
+        $stmt = $db->prepare("
+            INSERT INTO usuarios 
+            (ANEXO, APELLIDO, NOMBRE, UBICACION, CORREO)
+            VALUES (?, ?, ?, ?, NULLIF(?,''))
+        ");
     } else {
-        $error = $stmt->errorInfo();
-        throw new Exception('Error al crear el usuario: ' . $error[2]);
+        // Actualizar usuario existente
+        $stmt = $db->prepare("
+            UPDATE usuarios 
+            SET APELLIDO = ?, NOMBRE = ?, UBICACION = ?, CORREO = NULLIF(?,'')
+            WHERE ANEXO = ?
+        ");
     }
+    
+    if ($action === 'create') {
+        $stmt->execute([$anexo, $apellido, $nombre, $ubicacion, $correo]);
+    } else {
+        $stmt->execute([$apellido, $nombre, $ubicacion, $correo, $anexo]);
+    }
+    
+    $db->commit();
 
-} catch (Exception $e) {
-    error_log("Error en procesar_crear.php: " . $e->getMessage());
+    // Respuesta exitosa
+    $response = [
+        'success' => true,
+        'message' => $action === 'create' ? 'Usuario creado exitosamente' : 'Usuario actualizado exitosamente',
+        'data' => [
+            'ANEXO' => $anexo,
+            'APELLIDO' => $apellido,
+            'NOMBRE' => $nombre,
+            'UBICACION' => $ubicacion,
+            'CORREO' => $correo
+        ]
+    ];
+
+    // Asegurar que no haya salida previa
+    ob_end_clean();
+    echo json_encode($response);
+    exit;
+
+} catch (PDOException $e) {
+    error_log("Error PDO: " . $e->getMessage());
     http_response_code(500);
-    echo json_encode([
+    die(json_encode([
+        'success' => false,
+        'message' => 'Error de base de datos: ' . $e->getMessage()
+    ]));
+} catch (Exception $e) {
+    $db->rollBack(); // Revertir en caso de error
+    ob_end_clean(); // Limpiar cualquier salida
+    http_response_code($e->getCode() ?: 400);
+    die(json_encode([
         'success' => false,
         'message' => $e->getMessage()
-    ]);
-} 
+    ]));
+}
+
+ob_end_clean();
