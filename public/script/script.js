@@ -56,14 +56,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 CORREO: row.cells[4].textContent.trim()
             }));
         }
-
+    
         allUsers.sort((a, b) => {
-            const anexoA = parseInt(a.ANEXO) || 0;
-            const anexoB = parseInt(b.ANEXO) || 0;
-            return anexoA - anexoB;
+            return a.UBICACION.localeCompare(b.UBICACION);
         });
     }
-
     addUserBtn.addEventListener('click', () => {
         openModal('create');
     });
@@ -376,16 +373,17 @@ document.addEventListener('DOMContentLoaded', function() {
                     UBICACION: result.data.UBICACION,
                     CORREO: result.data.CORREO
                 };
-
+                
                 if (action === 'create') {
                     allUsers.push(nuevoUsuario);
+                    allUsers.sort((a, b) => a.UBICACION.localeCompare(b.UBICACION));
                 } else {
                     const index = allUsers.findIndex(u => u.ANEXO === document.getElementById('anexo').dataset.original);
                     if (index !== -1) {
                         allUsers[index] = nuevoUsuario;
+                        allUsers.sort((a, b) => a.UBICACION.localeCompare(b.UBICACION));
                     }
                 }
-
                 filterAndDisplayUsers(searchInput.value.trim());
                 showNotification(action === 'create' ? 'Usuario creado correctamente' : 'Usuario actualizado correctamente');
                 closeModal();

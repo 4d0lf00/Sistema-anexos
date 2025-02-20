@@ -9,19 +9,26 @@ if (!isset($_SESSION['usuario'])) {
 
 require_once '../config/db.php';
 
-// Establecer headers para descarga de Excel
-header('Content-Type: application/vnd.ms-excel');
+// Configurar headers para UTF-8 y Excel
+header('Content-Type: application/vnd.ms-excel; charset=UTF-8');
 header('Content-Disposition: attachment; filename="usuarios_' . date('Y-m-d') . '.xls"');
+header("Content-Transfer-Encoding: binary");
 header('Pragma: no-cache');
 header('Expires: 0');
 
-// Obtener los usuarios
-$sql = "SELECT * FROM usuarios ORDER BY CAST(ANEXO AS UNSIGNED)";
+// Agregar BOM para UTF-8
+echo chr(239) . chr(187) . chr(191);
+
+// Obtener los usuarios ordenados por ubicación
+$sql = "SELECT * FROM usuarios ORDER BY UBICACION ASC";
 $stmt = $db->prepare($sql);
 $stmt->execute();
 $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-// Crear el contenido del Excel
+// Crear el contenido del Excel con codificación UTF-8
+echo '<html>';
+echo '<head><meta charset="UTF-8"></head>';
+echo '<body>';
 echo '<table border="1">';
 // Encabezados
 echo '<tr>';
@@ -35,13 +42,15 @@ echo '</tr>';
 // Datos
 foreach($usuarios as $usuario) {
     echo '<tr>';
-    echo '<td>' . htmlspecialchars($usuario['ANEXO']) . '</td>';
-    echo '<td>' . htmlspecialchars($usuario['APELLIDO']) . '</td>';
-    echo '<td>' . htmlspecialchars($usuario['NOMBRE']) . '</td>';
-    echo '<td>' . htmlspecialchars($usuario['UBICACION']) . '</td>';
-    echo '<td>' . htmlspecialchars($usuario['CORREO']) . '</td>';
+    echo '<td>' . mb_convert_encoding(htmlspecialchars($usuario['ANEXO']), 'UTF-8', 'UTF-8') . '</td>';
+    echo '<td>' . mb_convert_encoding(htmlspecialchars($usuario['APELLIDO']), 'UTF-8', 'UTF-8') . '</td>';
+    echo '<td>' . mb_convert_encoding(htmlspecialchars($usuario['NOMBRE']), 'UTF-8', 'UTF-8') . '</td>';
+    echo '<td>' . mb_convert_encoding(htmlspecialchars($usuario['UBICACION']), 'UTF-8', 'UTF-8') . '</td>';
+    echo '<td>' . mb_convert_encoding(htmlspecialchars($usuario['CORREO']), 'UTF-8', 'UTF-8') . '</td>';
     echo '</tr>';
 }
 
 echo '</table>';
-exit; 
+echo '</body>';
+echo '</html>';
+exit;
